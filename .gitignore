@@ -1,0 +1,4 @@
+.DS_Store
+
+# Playwright/Chrome for Testing binaries (too large for GitHub)
+md-to-schematic/ai-easyeda-compiler/browsers/
