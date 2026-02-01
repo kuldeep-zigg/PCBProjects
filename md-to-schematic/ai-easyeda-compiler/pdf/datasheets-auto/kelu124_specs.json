@@ -1,17 +1,17 @@
 {
-  "component": "KELU124",
-  "voltage": {},
-  "current": {
-    "operating": ""
+  "component": null,
+  "voltage": {
+    "min": null,
+    "typ": null,
+    "max": null
   },
-  "package": "",
-  "pins": "",
-  "temperature": {},
-  "features": [],
-  "applications": [],
-  "manufacturer": "KODENSHI_AUK CORP.",
-  "description": "No Data",
-  "parsed": true,
-  "source_url": "https://www.alldatasheet.com/view.jsp?Searchword=KELU124",
-  "extracted_at": "2026-02-01T23:16:59.786Z"
+  "current": {
+    "operating": null
+  },
+  "package": null,
+  "manufacturer": null,
+  "raw": "I don't see any webpage text provided. Please provide the webpage text for the KELU124 component, and I'll extract the specifications as a JSON object.\n\nOnce you provide the text, I'll be happy to assist you!",
+  "parsed": false,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/KELU124+IC.html",
+  "extracted_at": "2026-02-01T23:52:00.431Z"
 }

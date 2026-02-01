@@ -1,0 +1,532 @@
+{
+  "metadata": {
+    "exported": "2026-02-01T23:29:08.263Z",
+    "components": 17,
+    "patterns": 0,
+    "designs": 0
+  },
+  "components": [
+    {
+      "name": "74HC595",
+      "specs": {
+        "component": "74HC595",
+        "voltage": {
+          "min": "-0.5V",
+          "typ": "4.5 to 5.5 V",
+          "max": "+7.0V"
+        },
+        "current": {
+          "operating": "3 mA (Typ.)",
+          "sleep": ""
+        },
+        "package": "DIP-16, SO-16",
+        "pins": "16",
+        "temperature": {
+          "min": "-40°C",
+          "max": "+85°C"
+        },
+        "features": [
+          "8-bit serial-in/parallel-out shift register",
+          "3-state"
+        ],
+        "applications": [
+          "Shift registers for LED displays",
+          "Data transfer between ICs"
+        ],
+        "manufacturer": "NXP Semiconductors",
+        "description": "Octal D-type flip-flop; 3-state",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/74HC595/ANALOG.html",
+        "extracted_at": "2026-02-01T23:29:04.669Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/74hc595_specs.json",
+      "timestamp": "2026-02-01T23:29:08.252Z",
+      "useCount": 0
+    },
+    {
+      "name": "AIRTABLE",
+      "specs": {
+        "component": "datasheet",
+        "voltage": {
+          "min": null,
+          "typ": null,
+          "max": null
+        },
+        "current": {
+          "operating": null
+        },
+        "package": null,
+        "manufacturer": null,
+        "raw": "I don't see any webpage text provided. Please provide the actual webpage text for the AIRTABLE component datasheet, and I'll extract the specifications as a JSON object.\n\nOnce you provide the text, I'll return the extracted JSON object in the format specified.",
+        "parsed": false,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/AIRTABLE+IC.html",
+        "extracted_at": "2026-02-01T22:13:04.691Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/airtable_specs.json",
+      "timestamp": "2026-02-01T23:29:08.252Z",
+      "useCount": 0
+    },
+    {
+      "name": "AMS1117",
+      "specs": {
+        "component": "AMS1117",
+        "voltage": {
+          "min": "1.8V",
+          "typ": "3.3V",
+          "max": "5.5V"
+        },
+        "current": {
+          "operating": "150mA"
+        },
+        "package": "TO-220, TO-263 (D2PAK)",
+        "pins": "3",
+        "temperature": {
+          "min": "-40°C",
+          "max": "+125°C"
+        },
+        "features": [
+          "Low dropout voltage",
+          "High accuracy"
+        ],
+        "applications": [
+          "Portable equipment",
+          "Industrial control"
+        ],
+        "manufacturer": "Texas Instruments (TI)",
+        "description": "3-Terminal, Low Dropout Linear Regulator",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/AMS1117+IC.html",
+        "extracted_at": "2026-02-01T06:35:09.972Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/ams1117_specs.json",
+      "timestamp": "2026-02-01T23:29:08.253Z",
+      "useCount": 0
+    },
+    {
+      "name": "BME280",
+      "specs": {
+        "component": "BME280",
+        "voltage": {
+          "min": "1.71 V",
+          "typ": "3.6 V",
+          "max": "3.6 V"
+        },
+        "current": {
+          "operating": "0.4 mA",
+          "sleep": "0.01 mA (deep sleep)"
+        },
+        "package": "LGA, LGA-3, LGA-7",
+        "pins": "8",
+        "temperature": {
+          "min": "-40 °C",
+          "max": "+85 °C"
+        },
+        "features": [
+          "Digital output",
+          "I2C interface"
+        ],
+        "applications": [
+          "Environmental monitoring",
+          "Weather stations"
+        ],
+        "manufacturer": "Bosch Sensortec GmbH",
+        "description": "High precision pressure, temperature and humidity sensor",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/BME280+IC.html",
+        "extracted_at": "2026-02-01T06:42:48.486Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/bme280_specs.json",
+      "timestamp": "2026-02-01T23:29:08.254Z",
+      "useCount": 0
+    },
+    {
+      "name": "CLAY",
+      "specs": {
+        "component": null,
+        "voltage": {
+          "min": null,
+          "typ": null,
+          "max": null
+        },
+        "current": {
+          "operating": null
+        },
+        "package": null,
+        "manufacturer": null,
+        "raw": "After analyzing the webpage text, I was unable to extract any relevant specifications for the CLAY component. The webpage only contains a warning message.\n\nHowever, if you provide me with the actual datasheet webpage text for the CLAY component, I'll be happy to help you extract the required specifications and return them as a valid JSON object.",
+        "parsed": false,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/CLAY+IC.html",
+        "extracted_at": "2026-02-01T22:19:37.642Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/clay_specs.json",
+      "timestamp": "2026-02-01T23:29:08.255Z",
+      "useCount": 0
+    },
+    {
+      "name": "ESP32-WROOM-32",
+      "specs": {
+        "component": "ESP32-WROOM-32",
+        "voltage": {
+          "min": "3.0V",
+          "typ": "3.3V",
+          "max": "3.6V"
+        },
+        "current": {
+          "operating": "80 mA",
+          "sleep": "20 uA"
+        },
+        "package": "WROOM-32",
+        "pins": "34",
+        "temperature": {
+          "min": "-40°C",
+          "max": "85°C"
+        },
+        "features": [
+          "Dual-core 32-bit LX6 microprocessor",
+          "Integrated Wi-Fi and Bluetooth"
+        ],
+        "applications": [
+          "IoT applications",
+          "Wireless sensor networks"
+        ],
+        "manufacturer": "Espressif Systems",
+        "description": "ESP32-WROOM-32 is a system-in-package (SiP) that integrates the ESP32-DOWDQ4 module with an antenna and a PCB. It is designed for IoT applications.",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/ESP32-WROOM-32+IC.html",
+        "extracted_at": "2026-02-01T06:43:07.908Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/esp32-wroom-32_specs.json",
+      "timestamp": "2026-02-01T23:29:08.255Z",
+      "useCount": 0
+    },
+    {
+      "name": "GENERIC-IC",
+      "specs": {
+        "component": "GENERIC-IC",
+        "voltage": {
+          "min": "-0.3V to +7.5V",
+          "typ": "+3.3V",
+          "max": "+6.0V"
+        },
+        "current": {
+          "operating": "10mA",
+          "sleep": "1μA (Typical)"
+        },
+        "package": "SOIC-8, TSSOP-8",
+        "pins": "8",
+        "temperature": {
+          "min": "-40°C to +85°C",
+          "max": "+125°C"
+        },
+        "features": [
+          "Low Power",
+          "High Speed"
+        ],
+        "applications": [
+          "General Purpose Logic",
+          "Microcontroller Interface"
+        ],
+        "manufacturer": "Generic Semiconductor Inc.",
+        "description": "8-bit Microprocessor with Integrated Memory and I/O",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/GENERIC-IC+IC.html",
+        "extracted_at": "2026-02-01T22:16:50.213Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/generic-ic_specs.json",
+      "timestamp": "2026-02-01T23:29:08.256Z",
+      "useCount": 0
+    },
+    {
+      "name": "GITHUB",
+      "specs": {
+        "component": null,
+        "voltage": {
+          "min": null,
+          "typ": null,
+          "max": null
+        },
+        "current": {
+          "operating": null
+        },
+        "package": null,
+        "manufacturer": null,
+        "raw": "I don't see any webpage text provided. Please provide the actual webpage text for the GITHUB component, and I'll extract the specifications in the requested format.\n\nOnce you provide the webpage text, I'll return a JSON object with the extracted specifications.",
+        "parsed": false,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/GITHUB+IC.html",
+        "extracted_at": "2026-02-01T22:12:32.079Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/github_specs.json",
+      "timestamp": "2026-02-01T23:29:08.257Z",
+      "useCount": 0
+    },
+    {
+      "name": "GOOGLE",
+      "specs": {
+        "component": "datasheet",
+        "voltage": {
+          "min": null,
+          "typ": null,
+          "max": null
+        },
+        "current": {
+          "operating": null
+        },
+        "package": null,
+        "manufacturer": null,
+        "raw": "I don't see any webpage text provided. Please provide the actual webpage text for the GOOGLE component datasheet, and I'll extract the specifications as a JSON object.\n\nOnce you provide the text, I'll return the extracted specifications in the requested format.",
+        "parsed": false,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/GOOGLE+IC.html",
+        "extracted_at": "2026-02-01T22:19:42.609Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/google_specs.json",
+      "timestamp": "2026-02-01T23:29:08.257Z",
+      "useCount": 0
+    },
+    {
+      "name": "IND",
+      "specs": {
+        "component": "on other websites or databases",
+        "voltage": {
+          "min": null,
+          "typ": null,
+          "max": null
+        },
+        "current": {
+          "operating": null
+        },
+        "package": null,
+        "manufacturer": null,
+        "raw": "After analyzing the webpage text, I was unable to find any specifications for the IND component. The webpage appears to be a search result page with multiple datasheets listed, but none of them provide detailed specifications for the IND component.\n\nHowever, I can suggest that you try searching for the IND component on other websites or databases, such as Digi-Key, Mouser, or Octopart, which may have more comprehensive and accurate information about the component.",
+        "parsed": false,
+        "source_url": "https://www.alldatasheet.com/view.jsp?Searchword=IND&sField=2",
+        "extracted_at": "2026-02-01T05:22:23.533Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/ind_specs.json",
+      "timestamp": "2026-02-01T23:29:08.257Z",
+      "useCount": 0
+    },
+    {
+      "name": "KELU124",
+      "specs": {
+        "component": "KELU124",
+        "voltage": {},
+        "current": {},
+        "package": "",
+        "pins": "",
+        "temperature": {},
+        "features": [],
+        "applications": [],
+        "manufacturer": "",
+        "description": "Placeholder: no verified datasheet specs in repo yet",
+        "raw": "No verified specs found in repo; awaiting datasheet/source text.",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/view.jsp?Searchword=KELU124&sField=4",
+        "extracted_at": "2026-02-01T23:23:11.751Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/kelu124_specs.json",
+      "timestamp": "2026-02-01T23:29:08.258Z",
+      "useCount": 0
+    },
+    {
+      "name": "LM358",
+      "specs": {
+        "component": "LM358",
+        "voltage": {
+          "min": "3V",
+          "typ": "not specified",
+          "max": "32V"
+        },
+        "current": {
+          "operating": "not specified",
+          "sleep": "not specified"
+        },
+        "package": "8-pin DIP, SOIC, SMT",
+        "pins": "8",
+        "temperature": {
+          "min": "-40°C",
+          "max": "125°C"
+        },
+        "features": [
+          "Low Input Offset Voltage",
+          "Low Input Bias Current",
+          "Open-Loop Gain: >100,000",
+          "Wide Common-Mode Range",
+          "Output Voltage Swing: covers most of the supply voltage range"
+        ],
+        "applications": [
+          "Voltage amplification",
+          "Comparator circuits",
+          "Active filters",
+          "Voltage followers"
+        ],
+        "manufacturer": "Texas Instruments (TI), ON Semiconductor, STMicroelectronics, etc.",
+        "description": "Dual operational amplifier (op-amp) integrated circuit (IC)",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/view_datasheet.jsp?Searchword=LM358",
+        "extracted_at": "2026-02-01T04:51:55.583Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/lm358_specs.json",
+      "timestamp": "2026-02-01T23:29:08.258Z",
+      "useCount": 0
+    },
+    {
+      "name": "MCP3208",
+      "specs": {
+        "component": "MCP3208",
+        "voltage": {
+          "min": "",
+          "typ": "",
+          "max": ""
+        },
+        "current": {
+          "operating": "",
+          "sleep": ""
+        },
+        "package": "",
+        "pins": "",
+        "temperature": {
+          "min": "",
+          "max": ""
+        },
+        "features": [],
+        "applications": [],
+        "manufacturer": "",
+        "description": "",
+        "parsed": true,
+        "source_url": "https://www.microchip.com/filehandler/redirect?https://ww1.microchip.com/downloads/en/DeviceDoc/mcp3208.pdf",
+        "extracted_at": "2026-02-01T06:50:21.139Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/mcp3208_specs.json",
+      "timestamp": "2026-02-01T23:29:08.258Z",
+      "useCount": 0
+    },
+    {
+      "name": "THIS",
+      "specs": {
+        "component": null,
+        "voltage": {
+          "min": null,
+          "typ": null,
+          "max": null
+        },
+        "current": {
+          "operating": null
+        },
+        "package": null,
+        "manufacturer": null,
+        "raw": "I'd be happy to help you extract the specifications from the webpage text. However, I don't see any webpage text provided. Please provide the actual webpage text for the THIS component, and I'll extract the specifications in the requested format.\n\nOnce I have the webpage text, I'll return a JSON object with the extracted specifications.",
+        "parsed": false,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/THIS+IC.html",
+        "extracted_at": "2026-02-01T22:13:10.543Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/this_specs.json",
+      "timestamp": "2026-02-01T23:29:08.259Z",
+      "useCount": 0
+    },
+    {
+      "name": "TSAL6400",
+      "specs": {
+        "component": "TSAL6400",
+        "voltage": {
+          "min": "-5.2V",
+          "typ": "-4.8V",
+          "max": "-3.6V"
+        },
+        "current": {
+          "operating": "10mA",
+          "sleep": "1μA"
+        },
+        "package": "TO-46 (SMD)",
+        "pins": "2",
+        "temperature": {
+          "min": "-40°C",
+          "max": "85°C"
+        },
+        "features": [
+          "High Sensitivity",
+          "Low Power Consumption"
+        ],
+        "applications": [
+          "Infrared Remote Control Systems",
+          "Proximity Detection"
+        ],
+        "manufacturer": "OSRAM Opto Semiconductors GmbH",
+        "description": "Infrared Emitting Diode (IRED)",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/TSAL6400+IC.html",
+        "extracted_at": "2026-02-01T23:26:43.811Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/tsal6400_specs.json",
+      "timestamp": "2026-02-01T23:29:08.260Z",
+      "useCount": 0
+    },
+    {
+      "name": "TSOP4838",
+      "specs": {
+        "component": "does not exist in Vishay's product portfolio.",
+        "voltage": {
+          "min": null,
+          "typ": null,
+          "max": null
+        },
+        "current": {
+          "operating": null
+        },
+        "package": null,
+        "manufacturer": null,
+        "raw": "Based on the provided webpage text, it appears that there is no specific information about the TSOP4838 component. The webpage seems to be a general overview of Vishay's products and services.\n\nHowever, I can suggest some possible reasons why the page for the TSOP4838 might not be available:\n\n1. The component does not exist in Vishay's product portfolio.\n2. The webpage is outdated or has been removed.\n3. The component is not publicly available on Vishay's website.\n\nIf you have access to a datasheet or documentation for the TSOP4838, I can help you extract the specifications and provide them in JSON format.\n\nPlease note that without specific information about the component, it's not possible to provide accurate specifications.",
+        "parsed": false,
+        "source_url": "https://www.vishay.com/docs/tsop4838.pdf",
+        "extracted_at": "2026-02-01T23:26:18.122Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/tsop4838_specs.json",
+      "timestamp": "2026-02-01T23:29:08.261Z",
+      "useCount": 0
+    },
+    {
+      "name": "WROOM-32",
+      "specs": {
+        "component": "WROOM-32",
+        "voltage": {
+          "min": "3.6V",
+          "typ": "3.8V",
+          "max": "4.2V"
+        },
+        "current": {
+          "operating": "20mA",
+          "sleep": "1μA"
+        },
+        "package": "WLCSP-24",
+        "pins": "24",
+        "temperature": {
+          "min": "-40°C",
+          "max": "+85°C"
+        },
+        "features": [
+          "ESP32 Dual-Core 32-bit LX6 Microcontroller",
+          "Integrated Wi-Fi and Bluetooth",
+          "Low Power Consumption"
+        ],
+        "applications": [
+          "IoT Applications",
+          "Industrial Automation",
+          "Home Automation"
+        ],
+        "manufacturer": "Espressif Systems",
+        "description": "ESP32-based module with integrated Wi-Fi and Bluetooth",
+        "parsed": true,
+        "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/WROOM-32+IC.html",
+        "extracted_at": "2026-02-01T05:21:17.978Z"
+      },
+      "source": "/Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler/pdf/datasheets-auto/wroom-32_specs.json",
+      "timestamp": "2026-02-01T23:29:08.262Z",
+      "useCount": 0
+    }
+  ],
+  "patterns": [],
+  "designHistory": {
+    "successes": [],
+    "failures": [],
+    "improvements": []
+  }
+}

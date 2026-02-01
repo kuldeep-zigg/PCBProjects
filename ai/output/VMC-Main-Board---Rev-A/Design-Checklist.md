@@ -1,5 +1,5 @@
 # Design Checklist - VMC Main Board - Rev A
-**Generated:** 2026-02-01T23:16:44.005Z
+**Generated:** 2026-02-01T23:36:51.846Z
 **Board:** VMC Main Board - Rev A
 **Revision:** Rev-A (Initial prototype)
 
@@ -176,15 +176,7 @@
 
 ## Applied VMC Hardware Rules
 
-1. Know which traces must be wide (power, motors, ground)
-2. Separate dirty (motors, LEDs) from clean (MCU, sensors) areas
-3. Understand motor inrush vs running vs stall current
-4. Learn antenna keepout rules for ESP32 modules
-5. Prefer ESP32 modules over bare chips as a beginner
-6. Learn how protected motor drivers reduce field failures
-7. capacitor
-8. sensor
-9. motor driver
+
 
 
 

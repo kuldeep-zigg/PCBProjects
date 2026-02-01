@@ -1,7 +1,7 @@
 # Learning Index - Auto-Updated
 
-**Last Updated:** 2026-02-01T05:55:16.736Z
-**Components Learned:** 3
+**Last Updated:** 2026-02-01T23:29:08.262Z
+**Components Learned:** 17
 **Design Patterns:** 0
 **Successful Designs:** 0
 **Failed Designs:** 0
@@ -10,11 +10,67 @@
 
 ## Components with Knowledge
 
+### 74HC595
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### AIRTABLE
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### AMS1117
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### BME280
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### CLAY
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### ESP32-WROOM-32
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### GENERIC-IC
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### GITHUB
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### GOOGLE
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
 ### IND
 - **Use Count:** 0
 - **Deprecated:** ✅ No
 
+### KELU124
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
 ### LM358
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### MCP3208
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### THIS
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### TSAL6400
+- **Use Count:** 0
+- **Deprecated:** ✅ No
+
+### TSOP4838
 - **Use Count:** 0
 - **Deprecated:** ✅ No
 

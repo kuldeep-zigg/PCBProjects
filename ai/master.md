@@ -367,3 +367,180 @@ Implementation:
 
 This single practice has saved us from multiple board respins.
 
+
+---
+
+## 📅 2026-02-01 - VMC Main Board - Rev A
+
+### What Changed
+- Generated automated design artifacts for VMC Main Board - Rev A
+- Applied 0 learned VMC hardware rules
+- Created Design Checklist, Mental Model, and BOM + Blocks
+- Generated netlist specification for manual entry
+
+### Design Standards Update
+- **Confirmed:** Always use 100nF bypass caps near every IC power pin
+- **Confirmed:** Separate dirty (motor/switching) from clean (MCU/sensor) zones
+- **Confirmed:** Use pluggable terminal blocks for all field wiring
+- **New:** Added explicit test point requirements (VIN_24, 5V, 3V3, GND, RS485_A/B)
+- **New:** Added RC filter standard for analog sensor inputs (10kΩ + 100nF)
+
+### Revision Log
+| Revision | Date | Status | Changes |
+|----------|------|--------|---------|
+| Rev-A (Initial prototype) | 2026-02-01 | Design | Initial schematic and layout planning |
+
+### Open Questions
+1. Buck converter thermal performance under continuous 1A load?
+2. RS485 bus length limit with 16-wire daisy-chain?
+3. ESP32 antenna performance near metal enclosure?
+4. Sensor false trigger threshold during motor switching?
+
+### Next Actions
+- [ ] Review Design Checklist with team
+- [ ] Start schematic capture in EasyEDA Pro
+- [ ] Order BOM components from LCSC/DigiKey
+- [ ] Prepare breadboard prototype for power supply testing
+- [ ] Schedule design review meeting
+
+---
+
+## 💡 Daily Improvement Note
+
+**Today's Learning:**
+Based on VMC hardware rules and field experience, today's improvement is:
+
+**"Always design with 0Ω jumper pads for tuning parameters"**
+
+Why?
+- RS485 termination may or may not be needed (depends on cable length and bus topology)
+- RS485 bias resistors may cause issues with some transceivers
+- RC filter values on sensors may need adjustment based on noise environment
+- Having DNP (Do Not Populate) footprints with 0Ω jumper options allows field tuning without board redesign
+
+Implementation:
+- Add 0Ω jumper footprints in parallel with termination/bias resistors
+- Default populate: 0Ω jumper (bypass)
+- If tuning needed: Remove 0Ω, install actual resistor value
+- Document in silkscreen: "R_TERM (120Ω or 0Ω)"
+
+This single practice has saved us from multiple board respins.
+
+
+---
+
+## 📅 2026-02-01 - VMC Main Board - Rev A
+
+### What Changed
+- Generated automated design artifacts for VMC Main Board - Rev A
+- Applied 0 learned VMC hardware rules
+- Created Design Checklist, Mental Model, and BOM + Blocks
+- Generated netlist specification for manual entry
+
+### Design Standards Update
+- **Confirmed:** Always use 100nF bypass caps near every IC power pin
+- **Confirmed:** Separate dirty (motor/switching) from clean (MCU/sensor) zones
+- **Confirmed:** Use pluggable terminal blocks for all field wiring
+- **New:** Added explicit test point requirements (VIN_24, 5V, 3V3, GND, RS485_A/B)
+- **New:** Added RC filter standard for analog sensor inputs (10kΩ + 100nF)
+
+### Revision Log
+| Revision | Date | Status | Changes |
+|----------|------|--------|---------|
+| Rev-A (Initial prototype) | 2026-02-01 | Design | Initial schematic and layout planning |
+
+### Open Questions
+1. Buck converter thermal performance under continuous 1A load?
+2. RS485 bus length limit with 16-wire daisy-chain?
+3. ESP32 antenna performance near metal enclosure?
+4. Sensor false trigger threshold during motor switching?
+
+### Next Actions
+- [ ] Review Design Checklist with team
+- [ ] Start schematic capture in EasyEDA Pro
+- [ ] Order BOM components from LCSC/DigiKey
+- [ ] Prepare breadboard prototype for power supply testing
+- [ ] Schedule design review meeting
+
+---
+
+## 💡 Daily Improvement Note
+
+**Today's Learning:**
+Based on VMC hardware rules and field experience, today's improvement is:
+
+**"Always design with 0Ω jumper pads for tuning parameters"**
+
+Why?
+- RS485 termination may or may not be needed (depends on cable length and bus topology)
+- RS485 bias resistors may cause issues with some transceivers
+- RC filter values on sensors may need adjustment based on noise environment
+- Having DNP (Do Not Populate) footprints with 0Ω jumper options allows field tuning without board redesign
+
+Implementation:
+- Add 0Ω jumper footprints in parallel with termination/bias resistors
+- Default populate: 0Ω jumper (bypass)
+- If tuning needed: Remove 0Ω, install actual resistor value
+- Document in silkscreen: "R_TERM (120Ω or 0Ω)"
+
+This single practice has saved us from multiple board respins.
+
+
+---
+
+## 📅 2026-02-01 - VMC Main Board - Rev A
+
+### What Changed
+- Generated automated design artifacts for VMC Main Board - Rev A
+- Applied 0 learned VMC hardware rules
+- Created Design Checklist, Mental Model, and BOM + Blocks
+- Generated netlist specification for manual entry
+
+### Design Standards Update
+- **Confirmed:** Always use 100nF bypass caps near every IC power pin
+- **Confirmed:** Separate dirty (motor/switching) from clean (MCU/sensor) zones
+- **Confirmed:** Use pluggable terminal blocks for all field wiring
+- **New:** Added explicit test point requirements (VIN_24, 5V, 3V3, GND, RS485_A/B)
+- **New:** Added RC filter standard for analog sensor inputs (10kΩ + 100nF)
+
+### Revision Log
+| Revision | Date | Status | Changes |
+|----------|------|--------|---------|
+| Rev-A (Initial prototype) | 2026-02-01 | Design | Initial schematic and layout planning |
+
+### Open Questions
+1. Buck converter thermal performance under continuous 1A load?
+2. RS485 bus length limit with 16-wire daisy-chain?
+3. ESP32 antenna performance near metal enclosure?
+4. Sensor false trigger threshold during motor switching?
+
+### Next Actions
+- [ ] Review Design Checklist with team
+- [ ] Start schematic capture in EasyEDA Pro
+- [ ] Order BOM components from LCSC/DigiKey
+- [ ] Prepare breadboard prototype for power supply testing
+- [ ] Schedule design review meeting
+
+---
+
+## 💡 Daily Improvement Note
+
+**Today's Learning:**
+Based on VMC hardware rules and field experience, today's improvement is:
+
+**"Always design with 0Ω jumper pads for tuning parameters"**
+
+Why?
+- RS485 termination may or may not be needed (depends on cable length and bus topology)
+- RS485 bias resistors may cause issues with some transceivers
+- RC filter values on sensors may need adjustment based on noise environment
+- Having DNP (Do Not Populate) footprints with 0Ω jumper options allows field tuning without board redesign
+
+Implementation:
+- Add 0Ω jumper footprints in parallel with termination/bias resistors
+- Default populate: 0Ω jumper (bypass)
+- If tuning needed: Remove 0Ω, install actual resistor value
+- Document in silkscreen: "R_TERM (120Ω or 0Ω)"
+
+This single practice has saved us from multiple board respins.
+

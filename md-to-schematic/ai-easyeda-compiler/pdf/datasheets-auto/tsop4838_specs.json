@@ -1,17 +1,25 @@
 {
-  "component": null,
+  "component": "TSOP4838",
   "voltage": {
-    "min": null,
-    "typ": null,
-    "max": null
+    "min": "",
+    "typ": "",
+    "max": ""
   },
   "current": {
-    "operating": null
+    "operating": "",
+    "sleep": ""
   },
-  "package": null,
-  "manufacturer": null,
-  "raw": "I don't see any webpage text provided. Please provide the actual webpage text for the TSOP4838 datasheet, and I'll extract the specifications as a JSON object.\n\nOnce you provide the text, I'll be happy to assist you!",
-  "parsed": false,
-  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/TSOP4838.html",
-  "extracted_at": "2026-02-01T23:17:06.370Z"
+  "package": "",
+  "pins": "",
+  "temperature": {
+    "min": "",
+    "max": ""
+  },
+  "features": [],
+  "applications": [],
+  "manufacturer": "Vishay",
+  "description": "",
+  "parsed": true,
+  "source_url": "https://www.vishay.com/docs/tsop4838.pdf",
+  "extracted_at": "2026-02-01T23:52:37.929Z"
 }

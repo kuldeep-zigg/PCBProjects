@@ -2,8 +2,8 @@
   "component": "GENERIC-IC",
   "voltage": {
     "min": "-0.3V to +7.5V",
-    "typ": "+3.3V",
-    "max": "+6.0V"
+    "typ": "+5V",
+    "max": "+6.5V"
   },
   "current": {
     "operating": "10mA",
@@ -20,12 +20,12 @@
     "High Speed"
   ],
   "applications": [
-    "General Purpose Logic",
-    "Microcontroller Interface"
+    "General Purpose Logic ICs",
+    "Microcontroller Peripherals"
   ],
   "manufacturer": "Generic Semiconductor Inc.",
-  "description": "8-bit Microprocessor with Integrated Memory and I/O",
+  "description": "A general-purpose logic IC with low power consumption and high speed performance.",
   "parsed": true,
   "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/GENERIC-IC+IC.html",
-  "extracted_at": "2026-02-01T22:16:50.213Z"
+  "extracted_at": "2026-02-01T23:34:21.017Z"
 }

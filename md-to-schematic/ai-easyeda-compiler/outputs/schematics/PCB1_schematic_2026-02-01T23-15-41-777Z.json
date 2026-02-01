@@ -1,0 +1,66 @@
+{
+  "project": "PCB1",
+  "timestamp": "2026-02-01T23:32:00.263Z",
+  "components": [
+    {
+      "id": "U1",
+      "name": "TSOP4838",
+      "package": "DIP-8",
+      "voltage": "5V",
+      "position": {
+        "x": 100,
+        "y": 100
+      }
+    },
+    {
+      "id": "U2",
+      "name": "TSAL6400",
+      "package": "TO-46 (SMD)",
+      "voltage": "-4.8V",
+      "position": {
+        "x": 300,
+        "y": 100
+      }
+    },
+    {
+      "id": "U3",
+      "name": "KELU124",
+      "package": "DIP-8",
+      "voltage": "5V",
+      "position": {
+        "x": 500,
+        "y": 100
+      }
+    },
+    {
+      "id": "U4",
+      "name": "74HC595",
+      "package": "DIP-16, SO-20",
+      "voltage": "4.5 to 5.5 V",
+      "position": {
+        "x": 700,
+        "y": 100
+      }
+    }
+  ],
+  "nets": [
+    {
+      "name": "VCC",
+      "connections": [
+        "U1.VCC",
+        "U2.VCC",
+        "U3.VCC",
+        "U4.VCC"
+      ]
+    },
+    {
+      "name": "GND",
+      "connections": [
+        "U1.GND",
+        "U2.GND",
+        "U3.GND",
+        "U4.GND"
+      ]
+    }
+  ]
+}

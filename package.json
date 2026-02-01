@@ -4,6 +4,10 @@
   "description": "VMC PCB Design Automation System",
   "main": "vmc-pcb-copilot.js",
   "scripts": {
+    "start": "npm --prefix md-to-schematic/ai-easyeda-compiler run status && npm --prefix md-to-schematic/ai-easyeda-compiler run auto:fast",
+    "status": "npm --prefix md-to-schematic/ai-easyeda-compiler run status",
+    "auto:fast": "npm --prefix md-to-schematic/ai-easyeda-compiler run auto:fast",
+    "training:check": "npm --prefix md-to-schematic/ai-training run multi-check",
     "vmc": "node vmc-pcb-copilot.js",
     "vmc-copilot": "node vmc-pcb-copilot.js",
     "auto-design": "node vmc-pcb-copilot.js"
