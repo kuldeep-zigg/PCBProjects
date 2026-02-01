@@ -1,0 +1,19 @@
+{
+  "name": "MD to Schematic Converter",
+  "version": "1.0.0",
+  "description": "Converts markdown PCB specifications to EasyEDA schematics",
+  "author": "Zigg",
+  "locale": "en_US",
+  "type": "extension",
+  "manifest_version": 2,
+  "main": "main.js",
+  "icon": "",
+  "category": "Utilities",
+  "menus": [
+    {
+      "type": "main",
+      "title": "Import from Markdown",
+      "command": "importFromMarkdown"
+    }
+  ]
+}

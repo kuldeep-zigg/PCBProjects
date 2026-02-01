@@ -1,0 +1,16 @@
+{
+  "name": "md-to-easyeda-schematic",
+  "version": "1.0.0",
+  "description": "Convert markdown PCB specs to EasyEDA schematic",
+  "type": "module",
+  "scripts": {
+    "parse": "node parser.js",
+    "parse:custom": "node parser.js",
+    "build-extension": "node build-extension.js"
+  },
+  "dependencies": {
+    "marked": "^11.1.0",
+    "markdown-table-parser": "^1.0.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,31 @@
+{
+  "component": "ESP32-WROOM-32",
+  "voltage": {
+    "min": "3.0V",
+    "typ": "3.3V",
+    "max": "3.6V"
+  },
+  "current": {
+    "operating": "80 mA",
+    "sleep": "20 uA"
+  },
+  "package": "WROOM-32",
+  "pins": "34",
+  "temperature": {
+    "min": "-40°C",
+    "max": "85°C"
+  },
+  "features": [
+    "Dual-core 32-bit LX6 microprocessor",
+    "Integrated Wi-Fi and Bluetooth"
+  ],
+  "applications": [
+    "IoT applications",
+    "Wireless sensor networks"
+  ],
+  "manufacturer": "Espressif Systems",
+  "description": "ESP32-WROOM-32 is a system-in-package (SiP) that integrates the ESP32-DOWDQ4 module with an antenna and a PCB. It is designed for IoT applications.",
+  "parsed": true,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/ESP32-WROOM-32+IC.html",
+  "extracted_at": "2026-02-01T06:43:07.908Z"
+}

@@ -1,0 +1,25 @@
+{
+  "component": "MCP3208",
+  "voltage": {
+    "min": "",
+    "typ": "",
+    "max": ""
+  },
+  "current": {
+    "operating": "",
+    "sleep": ""
+  },
+  "package": "",
+  "pins": "",
+  "temperature": {
+    "min": "",
+    "max": ""
+  },
+  "features": [],
+  "applications": [],
+  "manufacturer": "",
+  "description": "",
+  "parsed": true,
+  "source_url": "https://www.microchip.com/filehandler/redirect?https://ww1.microchip.com/downloads/en/DeviceDoc/mcp3208.pdf",
+  "extracted_at": "2026-02-01T06:50:21.139Z"
+}

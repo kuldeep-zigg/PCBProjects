@@ -1,0 +1,657 @@
+{
+  "component": "MAX3232",
+  "source": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232",
+  "timestamp": "2026-02-01T06:26:58.142Z",
+  "specs": {
+    "voltage": "3.0V - 5.5V",
+    "current": "2021MA",
+    "package": "DIP16",
+    "manufacturer": "Datasheet\tDescription\tBuy Now",
+    "description": null,
+    "features": [],
+    "applications": []
+  },
+  "datasheetLinks": [
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "English"
+    },
+    {
+      "url": "https://www.alldatasheetcn.com/",
+      "text": "Chinese"
+    },
+    {
+      "url": "https://www.alldatasheetde.com/",
+      "text": "German"
+    },
+    {
+      "url": "https://www.alldatasheet.jp/",
+      "text": "Japanese"
+    },
+    {
+      "url": "https://www.alldatasheetru.com/",
+      "text": "Russian"
+    },
+    {
+      "url": "https://www.alldatasheet.co.kr/",
+      "text": "Korean"
+    },
+    {
+      "url": "https://www.alldatasheet.es/",
+      "text": "Spanish"
+    },
+    {
+      "url": "https://www.alldatasheet.fr/",
+      "text": "French"
+    },
+    {
+      "url": "https://www.alldatasheetit.com/",
+      "text": "Italian"
+    },
+    {
+      "url": "https://www.alldatasheetpt.com/",
+      "text": "Portuguese"
+    },
+    {
+      "url": "https://www.alldatasheet.pl/",
+      "text": "Polish"
+    },
+    {
+      "url": "https://www.alldatasheet.vn/",
+      "text": "Vietnamese"
+    },
+    {
+      "url": "https://www.alldatasheet.in/",
+      "text": "Indian"
+    },
+    {
+      "url": "https://www.alldatasheet.com.mx/",
+      "text": "Mexican"
+    },
+    {
+      "url": "https://www.alldatasheet.co.uk/",
+      "text": "British"
+    },
+    {
+      "url": "https://www.alldatasheet.co.nz/",
+      "text": "New Zealand"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "ALLDATASHEET.COM"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232",
+      "text": "All"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?Searchword=MAX3232",
+      "text": "Datasheet"
+    },
+    {
+      "url": "https://www.alldatasheet.com/distributor/view.jsp?Searchword=MAX3232",
+      "text": "Distributor"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view.jsp?Searchword=MAX3232",
+      "text": "Manufacturer"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232&sField=4",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232C&sField=4",
+      "text": "MAX3232C"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232E&sField=4",
+      "text": "MAX3232E"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232&sField=2",
+      "text": "MAX3232*"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232-&sField=2",
+      "text": "MAX3232-"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232C&sField=2",
+      "text": "MAX3232C"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232E&sField=2",
+      "text": "MAX3232E"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232I&sField=2",
+      "text": "MAX3232I"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232M&sField=2",
+      "text": "MAX3232M"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232P&sField=2",
+      "text": "MAX3232P"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=MAX3232",
+      "text": "All"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=158",
+      "text": "TI"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=92",
+      "text": "MAXIM"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=841",
+      "text": "TI1"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=2616",
+      "text": "TI2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=1606",
+      "text": "UMW"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=15",
+      "text": "AD"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=843",
+      "text": "ETC2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=900",
+      "text": "TGS"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=1147",
+      "text": "ARTSCHIP"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=1888",
+      "text": "SYC"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=MAX3232&list=2300",
+      "text": "EMBEST"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/73163/MAXIM/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/73163/MAXIM/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/159008/TI/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/159008/TI/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/350644/TI/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/350644/TI/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/837211/TI1/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/837211/TI1/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/659339/TGS/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/659339/TGS/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1147602/ARTSCHIP/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1147602/ARTSCHIP/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2221523/TI2/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2221523/TI2/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2175941/TI2/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2175941/TI2/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2160865/EMBEST/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2160865/EMBEST/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2035704/SYC/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2035704/SYC/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785400/UMW/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785400/UMW/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785399/UMW/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785399/UMW/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785398/UMW/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785398/UMW/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785225/UMW/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785225/UMW/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785223/UMW/MAX3232.html",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1785223/UMW/MAX3232.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/462943/TI1/MAX3232-EP.html",
+      "text": "MAX3232-EP"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/462943/TI1/MAX3232-EP.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2175934/TI2/MAX3232-EP.html",
+      "text": "MAX3232-EP"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2175934/TI2/MAX3232-EP.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2221554/TI2/MAX3232-EP.html",
+      "text": "MAX3232-EP"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2221554/TI2/MAX3232-EP.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/837261/TI1/MAX3232C.html",
+      "text": "MAX3232C"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/837261/TI1/MAX3232C.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/159009/TI/MAX3232CD.html",
+      "text": "MAX3232CD"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/159009/TI/MAX3232CD.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=2&sField=0",
+      "text": "2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=3&sField=0",
+      "text": "3"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=4&sField=0",
+      "text": "4"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=5&sField=0",
+      "text": "5"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=6&sField=0",
+      "text": "6"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=7&sField=0",
+      "text": "7"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=8&sField=0",
+      "text": "8"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=9&sField=0",
+      "text": "9"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=10&sField=0",
+      "text": "10"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=2&sField=0",
+      "text": "2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=3&sField=0",
+      "text": "3"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=4&sField=0",
+      "text": "4"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=MAX3232&sPage=5&sField=0",
+      "text": "5"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=3747488&p=MAX3232&f=Texas+Instruments",
+      "text": "MAX3232"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=3747488&p=MAX3232&f=Texas+Instruments",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=3741263&p=MAX3232-EP&f=Texas+Instruments",
+      "text": "MAX3232-EP"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=3741263&p=MAX3232-EP&f=Texas+Instruments",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=9990&p=MAX3232CAE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232CAE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=9990&p=MAX3232CAE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=1268&p=MAX3232CAE%2BT&f=Analog+Devices+Inc",
+      "text": "MAX3232CAE+T"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=1268&p=MAX3232CAE%2BT&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=8296&p=MAX3232CPE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232CPE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=8296&p=MAX3232CPE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=25247&p=MAX3232CSE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232CSE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=25247&p=MAX3232CSE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=29767&p=MAX3232CSE%2BT&f=Analog+Devices+Inc",
+      "text": "MAX3232CSE+T"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=29767&p=MAX3232CSE%2BT&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=21433&p=MAX3232CUE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232CUE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=21433&p=MAX3232CUE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=19698&p=MAX3232CUE%2BT&f=Analog+Devices+Inc",
+      "text": "MAX3232CUE+T"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=19698&p=MAX3232CUE%2BT&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=2206&p=MAX3232CWE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232CWE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=2206&p=MAX3232CWE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=26396&p=MAX3232CWE%2BT&f=Analog+Devices+Inc",
+      "text": "MAX3232CWE+T"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=26396&p=MAX3232CWE%2BT&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=3752640&p=MAX3232E&f=Texas+Instruments",
+      "text": "MAX3232E"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=3752640&p=MAX3232E&f=Texas+Instruments",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=3746172&p=MAX3232E-Q1&f=Texas+Instruments",
+      "text": "MAX3232E-Q1"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=3746172&p=MAX3232E-Q1&f=Texas+Instruments",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=18355&p=MAX3232ECAE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232ECAE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=18355&p=MAX3232ECAE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=17592&p=MAX3232ECAE%2BT&f=Analog+Devices+Inc",
+      "text": "MAX3232ECAE+T"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=17592&p=MAX3232ECAE%2BT&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=7064&p=MAX3232ECPE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232ECPE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=7064&p=MAX3232ECPE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=19432&p=MAX3232ECSE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232ECSE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=19432&p=MAX3232ECSE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=17743&p=MAX3232ECSE%2BT&f=Analog+Devices+Inc",
+      "text": "MAX3232ECSE+T"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=17743&p=MAX3232ECSE%2BT&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=14218&p=MAX3232ECTE%2B&f=Analog+Devices+Inc",
+      "text": "MAX3232ECTE+"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=14218&p=MAX3232ECTE%2B&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=8458&p=MAX3232ECTE%2BT&f=Analog+Devices+Inc",
+      "text": "MAX3232ECTE+T"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=8458&p=MAX3232ECTE%2BT&f=Analog+Devices+Inc",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view.jsp?sSearchword=MAX3232&sPage=2",
+      "text": "2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view.jsp?sSearchword=MAX3232&sPage=3",
+      "text": "3"
+    },
+    {
+      "url": "https://www.alldatasheet.com/bottom_bar/about_alldatasheet.jsp",
+      "text": "About Alldatasheet"
+    },
+    {
+      "url": "https://www.alldatasheet.com/donate.jsp",
+      "text": "[ DONATE ]"
+    },
+    {
+      "url": "https://www.alldatasheet.com/bottom_bar/about_alldatasheet.jsp",
+      "text": "About Alldatasheet"
+    },
+    {
+      "url": "https://upload.alldatasheet.com/",
+      "text": "Datasheet Upload"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "Alldatasheet.com"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "Alldatasheet.com"
+    },
+    {
+      "url": "https://www.alldatasheet.net/",
+      "text": "Alldatasheet.net"
+    },
+    {
+      "url": "https://www.alldatasheetcn.com/",
+      "text": "Alldatasheetcn.com"
+    },
+    {
+      "url": "https://www.alldatasheetde.com/",
+      "text": "Alldatasheetde.com"
+    },
+    {
+      "url": "https://www.alldatasheet.jp/",
+      "text": "Alldatasheet.jp"
+    },
+    {
+      "url": "https://www.alldatasheetru.com/",
+      "text": "Alldatasheetru.com"
+    },
+    {
+      "url": "https://www.alldatasheet.co.kr/",
+      "text": "Alldatasheet.co.kr"
+    },
+    {
+      "url": "https://www.alldatasheet.es/",
+      "text": "Alldatasheet.es"
+    },
+    {
+      "url": "https://www.alldatasheet.fr/",
+      "text": "Alldatasheet.fr"
+    },
+    {
+      "url": "https://www.alldatasheetit.com/",
+      "text": "Alldatasheetit.com"
+    },
+    {
+      "url": "https://www.alldatasheetpt.com/",
+      "text": "Alldatasheetpt.com"
+    },
+    {
+      "url": "https://www.alldatasheet.pl/",
+      "text": "Alldatasheet.pl"
+    },
+    {
+      "url": "https://www.alldatasheet.vn/",
+      "text": "Alldatasheet.vn"
+    },
+    {
+      "url": "https://www.alldatasheet.in/",
+      "text": "Alldatasheet.in"
+    },
+    {
+      "url": "https://www.alldatasheet.com.mx/",
+      "text": "Alldatasheet.com.mx"
+    },
+    {
+      "url": "https://www.alldatasheet.co.uk/",
+      "text": "Alldatasheet.co.uk"
+    },
+    {
+      "url": "https://www.alldatasheet.co.nz/",
+      "text": "Alldatasheet.co.nz"
+    }
+  ],
+  "pageText": "\tElectronic Components Datasheet Search\t\n  English  ▼\t\nALLDATASHEET.COM\n\nPart #\nDescription\nMarking\n\nX  \n\n  \nAll\t\tDatasheet\t\tDistributor\t\tManufacturer\t\nShortcut\t  MAX3232(424) recommended result.\nMatch, Like\t MAX3232(15) MAX3232C(1) MAX3232E(11)\nStart with\t MAX3232*(407) MAX3232-*(3) MAX3232C*(77) MAX3232E*(237) MAX3232I*(71) MAX3232M*(6) MAX3232P*(1)\nEnd\t  No Data\nIncluded\t  No Data\n\n\nManufacturer\t\n  All TI(241) MAXIM(59) TI1(55) TI2(43) UMW(10) AD(8) ETC2(4) TGS(1) ARTSCHIP(1) SYC(1) EMBEST(1)\n\n\n\t\t\n\n\n\n\nMAX3232 Datasheet, PDF\nSearch Partnumber : Match&Start with \"MAX3232\" - Total : 424 ( 1/22 Page)\nManufacturer\tPart #\tDatasheet\tDescription\n\nMaxim Integrated Produc...\tMAX3232\t\n268Kb/16P\t3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1uF External Capacitors\nRev 5; 3/99\n\nTexas Instruments\tMAX3232\t\n331Kb/14P\t3-V TO 5.5-V MULTICHANNEL RS-232 LINE DRIVER/RECEIVER WITH +-15-kV ESD PROTECTION\nMAX3232\t\n615Kb/18P\t3-V TO 5.5-V MULTICHANNEL RS-232 LINE DRIVER/ RECEIVER WITH +-15-kV ESD PROTECTION\nMAX3232\t\n1Mb/27P\tMAX3232 3-V to 5.5-V Multichannel RS-232 Line Driver/Receiver\n\nTiger Electronic Co.,Lt...\tMAX3232\t\n362Kb/16P\t3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1關F External Capacitors\n\nARTSCHIP ELECTRONICS CO...\tMAX3232\t\n1Mb/15P\tTransceivers Transmitter\n\nTexas Instruments\tMAX3232\t\n1Mb/30P\tMAX3232 3-V to 5.5-V Multichannel RS-232 Line Driver and Receiver With ±15-kV ESD Protection\nREVISED JUNE 2021\nMAX3232\t\n488Kb/18P\t3-V TO 5.5-V MULTICHANNEL RS-232 LINE DRIVER/RECEIVER WITH ±15-kV ESD PROTECTION\nREVISED MARCH 2009\n\nEmbest Technology Co. L...\tMAX3232\t\n202Kb/3P\tLow Cost Development Kit\n\nSYC Electronica\tMAX3232\t\n248Kb/16P\t3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1μF External Capacitors\n\nGuangdong Youtai Semico...\tMAX3232\t\n405Kb/7P\t3.0V TO 5.5V LOW POWER MULTICHANNEL RS-232 LINE TRANSCEIVERS USING FOR 0.1 μF EXTERNAL CAPACITORS\nMAX3232\t\n405Kb/7P\t3.0V TO 5.5V LOW POWER MULTICHANNEL RS-232 LINE TRANSCEIVERS USING FOR 0.1 μF EXTERNAL CAPACITORS\nMAX3232\t\n405Kb/7P\t3.0V TO 5.5V LOW POWER MULTICHANNEL RS-232 LINE TRANSCEIVERS USING FOR 0.1 μF EXTERNAL CAPACITORS\nMAX3232\t\n405Kb/7P\t3.0V TO 5.5V LOW POWER MULTICHANNEL RS-232 LINE TRANSCEIVERS USING FOR 0.1 μF EXTERNAL CAPACITORS\nMAX3232\t\n405Kb/7P\t3.0V TO 5.5V LOW POWER MULTICHANNEL RS-232 LINE TRANSCEIVERS USING FOR 0.1 μF EXTERNAL CAPACITORS\n\nTexas Instruments\tMAX3232-EP\t\n533Kb/14P\t3-V TO 5.5-V MULTICHANNEL RS-232 LINE DRIVER/RECEIVER WITH 짹15-kV ESD PROTECTION\nMAX3232-EP\t\n488Kb/18P\t3-V TO 5.5-V MULTICHANNEL RS-232 LINE DRIVER/RECEIVER WITH ±15-kV ESD PROTECTION\nREVISED MARCH 2009\nMAX3232-EP\t\n1Mb/30P\tMAX3232 3-V to 5.5-V Multichannel RS-232 Line Driver and Receiver With ±15-kV ESD Protection\nREVISED JUNE 2021\nMAX3232C\t\n1Mb/27P\tMAX3232 3-V to 5.5-V Multichannel RS-232 Line Driver/Receiver\nMAX3232CD\t\n331Kb/14P\t3-V TO 5.5-V MULTICHANNEL RS-232 LINE DRIVER/RECEIVER WITH +-15-kV ESD PROTECTION\n\n12 3 4 5 6 7 8 9 10 .....\n\n\n\n12 3 4 5 .....\n\n\n\n\n\n\nMAX3232 Datasheet, PDF [Distributor]\nDistributor\tPart #\tManufacturer\nDatasheet\tDescription\tBuy Now\n\nElement14\tMAX3232CAE+\n\n\tANALOG DEVICES\n\n\tRS232 TXRX, 235KBPS, 5.5V, SSOP-16; Device Type:Transceiver; IC Interface Type:RS232; No. of Drivers...\t\nMAX3232CPE+\n\n\tANALOG DEVICES\n\n\tIC, TRANSCEIVER, RS232, DIP16; Device Type:Transceiver; IC Interface Type:RS232; No. of Drivers:2Dri...\t\n\n\nMAX3232 Distributor\nDistributor\tPart #\tManufacturer\tDescription\tPrice\tQty.\nBuyNow\n\n\n\n\n\nMAX3232 Manufacturer\nSearch Partnumber : Match&Start with \"MAX3232\" Total : 45 ( 1/3 Page)\t\nManufacturer\tPart #\tDatasheet\nDate\nSize\tDescription\tRohs\nPb Free\nLifecycle\tDirect Link\n\nTexas Instruments\tMAX3232\t\tMAX3232 3-V to 5.5-V Multichannel RS-232 Line Driver and Receiver With ±15-kV ESD Protection datasheet (Rev. O)\t\n\n\t\nMAX3232-EP\t\t3-V to 5.5-V Multichannel RS-232 Line Driver/Receiver w/+/-15-kV ESD datasheet (Rev. A)\t\n\n\t\n\nAnalog Devices Inc\tMAX3232CAE+\t\t3.0V to 5.5V, Low-Power, Up to 1Mbps, True RS-232 Transceivers, 16-SSOP-5.3_MM, 16 Pins, 0 to 70C\tcompliant\n\nactive\t\nMAX3232CAE+T\t\t3.0V to 5.5V, Low-Power, Up to 1Mbps, True RS-232 Transceivers, 16-SSOP-5.3_MM, 16 Pins, 0 to 70C\tcompliant\n\nactive\t\nMAX3232CPE+\t\t3.0V to 5.5V, Low-Power, Up to 1Mbps, True RS-232 Transceivers, 16-PDIP-300_MIL, 16 Pins, 0 to 70C\tcompliant\n\nactive\t\nMAX3232CSE+\t\t3.0V to 5.5V, Low-Power, Up to 1Mbps, True RS-232 Transceivers, 16-SOIC_N-150_MIL, 16 Pins, 0 to 70C\tcompliant\n\nactive\t\nMAX3232CSE+T\t\t3.0V to 5.5V, Low-Power, Up to 1Mbps, True RS-232 Transceivers, 16-SOIC_N-150_MIL, 16 Pins, 0 to 70C\tcompliant\n\nactive\t\nMAX3232CUE+\t\t3.0V to 5.5V, Low-Power, Up to 1Mbps, True RS-232 Transceivers, 16-TSSOP_4.4-4.4_MM, 16 Pins, 0 to 70C\tcompliant\n\nactive\t\nMAX3232CUE+T\t\t3.0V to 5.5V, Low-Power, Up to 1Mbps, True RS-232 Transceivers, 16-TSSOP_4.4-4.4_MM, 16 Pins, 0 to 70C\tcompliant\n\nactive\t\nMAX3232CWE+\t\t3.0V to 5.5V, Low-Power, Up to 1Mbps, True RS-232 Transceivers, 16-SOIC_W-300_MIL, 16 Pins, 0 to 70C\tcompliant\n\nactive\t\nMAX"
+}

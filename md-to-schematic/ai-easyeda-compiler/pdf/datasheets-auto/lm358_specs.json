@@ -1,0 +1,36 @@
+{
+  "component": "LM358",
+  "voltage": {
+    "min": "3V",
+    "typ": "not specified",
+    "max": "32V"
+  },
+  "current": {
+    "operating": "not specified",
+    "sleep": "not specified"
+  },
+  "package": "8-pin DIP, SOIC, SMT",
+  "pins": "8",
+  "temperature": {
+    "min": "-40°C",
+    "max": "125°C"
+  },
+  "features": [
+    "Low Input Offset Voltage",
+    "Low Input Bias Current",
+    "Open-Loop Gain: >100,000",
+    "Wide Common-Mode Range",
+    "Output Voltage Swing: covers most of the supply voltage range"
+  ],
+  "applications": [
+    "Voltage amplification",
+    "Comparator circuits",
+    "Active filters",
+    "Voltage followers"
+  ],
+  "manufacturer": "Texas Instruments (TI), ON Semiconductor, STMicroelectronics, etc.",
+  "description": "Dual operational amplifier (op-amp) integrated circuit (IC)",
+  "parsed": true,
+  "source_url": "https://www.alldatasheet.com/view_datasheet.jsp?Searchword=LM358",
+  "extracted_at": "2026-02-01T04:51:55.583Z"
+}

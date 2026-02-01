@@ -1,0 +1,6 @@
+node_modules/
+.env
+parsed-pcb-data.json
+output/
+*.log
+.DS_Store

@@ -1,0 +1,42 @@
+{
+  "project": "my-board",
+  "timestamp": "2026-02-01T06:43:07.914Z",
+  "components": [
+    {
+      "id": "U1",
+      "name": "ESP32-WROOM-32",
+      "package": "WROOM-32",
+      "voltage": "3.3V",
+      "position": {
+        "x": 100,
+        "y": 100
+      }
+    },
+    {
+      "id": "U2",
+      "name": "BME280",
+      "package": "LGA, LGA-3, LGA-7",
+      "voltage": "3.6 V",
+      "position": {
+        "x": 300,
+        "y": 100
+      }
+    }
+  ],
+  "nets": [
+    {
+      "name": "VCC",
+      "connections": [
+        "U1.VCC",
+        "U2.VCC"
+      ]
+    },
+    {
+      "name": "GND",
+      "connections": [
+        "U1.GND",
+        "U2.GND"
+      ]
+    }
+  ]
+}

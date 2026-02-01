@@ -1,0 +1,33 @@
+{
+  "component": "WROOM-32",
+  "voltage": {
+    "min": "3.6V",
+    "typ": "3.8V",
+    "max": "4.2V"
+  },
+  "current": {
+    "operating": "20mA",
+    "sleep": "1μA"
+  },
+  "package": "WLCSP-24",
+  "pins": "24",
+  "temperature": {
+    "min": "-40°C",
+    "max": "+85°C"
+  },
+  "features": [
+    "ESP32 Dual-Core 32-bit LX6 Microcontroller",
+    "Integrated Wi-Fi and Bluetooth",
+    "Low Power Consumption"
+  ],
+  "applications": [
+    "IoT Applications",
+    "Industrial Automation",
+    "Home Automation"
+  ],
+  "manufacturer": "Espressif Systems",
+  "description": "ESP32-based module with integrated Wi-Fi and Bluetooth",
+  "parsed": true,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/WROOM-32+IC.html",
+  "extracted_at": "2026-02-01T05:21:17.978Z"
+}

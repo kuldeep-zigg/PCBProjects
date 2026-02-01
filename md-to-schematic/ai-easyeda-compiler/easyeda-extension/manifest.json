@@ -1,0 +1,53 @@
+{
+  "name": "AI EasyEDA Compiler Extension",
+  "version": "2.0.0",
+  "description": "Import AI-generated schematics from JSON into EasyEDA Pro",
+  "author": "Zigg AI Systems",
+  "locale": "en_US",
+  "type": "extension",
+  "manifest_version": 2,
+  "main": "main.js",
+  "icon": "",
+  "category": "Automation",
+  "menus": [
+    {
+      "type": "main",
+      "title": "Import AI Schematic",
+      "command": "importAISchematic"
+    },
+    {
+      "type": "main",
+      "title": "Import from Compiler Output",
+      "command": "importFromCompiler"
+    },
+    {
+      "type": "main",
+      "title": "Update Current Schematic",
+      "command": "updateSchematic"
+    },
+    {
+      "type": "context",
+      "title": "AI Compiler Tools",
+      "children": [
+        {
+          "title": "Generate BOM",
+          "command": "generateBOM"
+        },
+        {
+          "title": "Validate Design",
+          "command": "validateDesign"
+        },
+        {
+          "title": "Export for Manufacturing",
+          "command": "exportManufacturing"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "fileSystem",
+    "schematic",
+    "pcb",
+    "library"
+  ]
+}

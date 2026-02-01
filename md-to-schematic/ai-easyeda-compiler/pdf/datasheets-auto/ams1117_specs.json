@@ -1,0 +1,30 @@
+{
+  "component": "AMS1117",
+  "voltage": {
+    "min": "1.8V",
+    "typ": "3.3V",
+    "max": "5.5V"
+  },
+  "current": {
+    "operating": "150mA"
+  },
+  "package": "TO-220, TO-263 (D2PAK)",
+  "pins": "3",
+  "temperature": {
+    "min": "-40°C",
+    "max": "+125°C"
+  },
+  "features": [
+    "Low dropout voltage",
+    "High accuracy"
+  ],
+  "applications": [
+    "Portable equipment",
+    "Industrial control"
+  ],
+  "manufacturer": "Texas Instruments (TI)",
+  "description": "3-Terminal, Low Dropout Linear Regulator",
+  "parsed": true,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/AMS1117+IC.html",
+  "extracted_at": "2026-02-01T06:35:09.972Z"
+}

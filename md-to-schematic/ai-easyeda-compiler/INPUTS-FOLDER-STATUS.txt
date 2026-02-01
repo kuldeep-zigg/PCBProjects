@@ -1,0 +1,168 @@
+╔════════════════════════════════════════════════════════════╗
+║          INPUTS FOLDER - FILE READING STATUS               ║
+╚════════════════════════════════════════════════════════════╝
+
+📊 CURRENT STATUS:
+
+Total files in inputs/:        34 files
+Files being read:              2 files (5.9%)
+Files being ignored:           32 files (94.1%)
+
+
+┌────────────────────────────────────────────────────────────┐
+│              FILES BEING READ ✅                           │
+└────────────────────────────────────────────────────────────┘
+
+✅ example-led-blink.md         816 bytes   (PROCESSED)
+✅ my-board.md                   122 bytes   (PROCESSED)
+
+
+┌────────────────────────────────────────────────────────────┐
+│              FILES BEING IGNORED ❌                        │
+└────────────────────────────────────────────────────────────┘
+
+❌ PDF DATASHEETS (13 files):
+   2920L-Datasheet-Update.pdf          432 KB
+   865080663020.pdf                    717 KB
+   18998218-f3fb-4628-a1da-*.pdf      1.8 MB
+   edbf31a3-b1cb-4e90-a4c5-*.pdf      621 KB
+   Industrial Vmc Controller *.pdf      93 KB
+   IRF9540NSTRLPBF.pdf                329 KB
+   MAX3232CPE+.pdf                    459 KB
+   SEAGASTATON.pdf                    2.3 MB
+   SMBJ36A-TVS-Diode-*.pdf            925 KB
+   WM_schematic.pdf                   624 KB
+   mw2.pdf                            629 KB
+   szza009.pdf                        373 KB
+   tsal6100.pdf                       103 KB
+   tsal6400.pdf                       100 KB
+   tssp4038.pdf                       171 KB
+   vslb3940.pdf                        99 KB
+
+❌ IMAGE FILES (10 files):
+   BUZZER_Connections.jpg              31 KB
+   ESP32_DEV_KIT.jpg                   79 KB
+   LM393L_MCP3208.jpg                 115 KB
+   MCP2307-E_SP_SPIO_Expander.jpg     154 KB
+   MCP3208_connection_*.jpg            93 KB
+   MPU6050_connections.jpg             26 KB
+   MX3232CPE_DB_9.jpg                  83 KB
+   SENSOR_DATA.jpg                     13 KB
+   Single_FDS4897AC_connection.jpg     73 KB
+   SN74HC595N_3_in_series.jpg          73 KB
+   SSD1306_128x64_I2C_*.jpg            45 KB
+   ULN2803G_AND_10x_FDS4897C.jpg      133 KB
+   X2549WR-2x32A-*.jpg                 68 KB
+
+❌ OTHER FILES (3 files):
+   Act like a senior... (text)        3.7 KB
+   satron_vending_code_explain.md    332 KB
+   Saton2.0&satron-board... (ws)      144 bytes
+
+
+╔════════════════════════════════════════════════════════════╗
+║                     WHY?                                   ║
+╚════════════════════════════════════════════════════════════╝
+
+The automated system is designed to ONLY process:
+  ✅ Files ending with .md (markdown)
+  ✅ Located in inputs/ folder
+
+Code (line 148-149 of auto-pcb-designer-optimized.js):
+  
+  const mdFiles = allFiles
+    .filter(f => f.endsWith('.md'))  // ← ONLY .md files!
+
+This is BY DESIGN. The system expects:
+  • inputs/ = User PCB requirements (.md only)
+  • pdf/ = Datasheets (PDFs)
+  • reference-images/ = Schematics (JPGs)
+
+
+╔════════════════════════════════════════════════════════════╗
+║                  HOW TO FIX                                ║
+╚════════════════════════════════════════════════════════════╝
+
+OPTION 1: Run automatic organization script
+  $ ./organize-inputs.sh
+
+OPTION 2: Manual organization
+  $ mkdir -p pdf/datasheets-manual
+  $ mkdir -p reference-images
+  $ mv inputs/*.pdf pdf/datasheets-manual/
+  $ mv inputs/*.jpg reference-images/
+
+OPTION 3: Read the complete guide
+  $ cat FILE-ORGANIZATION-GUIDE.md
+
+
+╔════════════════════════════════════════════════════════════╗
+║                  AFTER ORGANIZING                          ║
+╚════════════════════════════════════════════════════════════╝
+
+inputs/ should contain ONLY:
+  ✅ example-led-blink.md
+  ✅ my-board.md
+  ✅ (any other .md files you create)
+
+PDFs will be in:
+  ✅ pdf/datasheets-manual/
+
+Images will be in:
+  ✅ reference-images/
+
+System will then:
+  ✅ Read all .md files
+  ✅ Process all requirements
+  ✅ Generate designs automatically
+
+
+╔════════════════════════════════════════════════════════════╗
+║                  CURRENT BEHAVIOR                          ║
+╚════════════════════════════════════════════════════════════╝
+
+From the terminal log, the system IS working correctly:
+
+✅ Processed: example-led-blink.md
+   → Downloaded ESP32-WROOM-32 datasheets (10 files)
+   → Generated pin table
+   → Generated schematic
+   → Generated documentation
+   → SUCCESS in 357.8s
+
+✅ Processed: my-board.md
+   → Extracted: ESP32-WROOM-32, BME280
+   → Downloaded BME280 datasheets (10 files)
+   → Parallel processing active
+   → Currently running...
+
+The system is WORKING as designed!
+It just ignores non-.md files (which is correct behavior).
+
+
+╔════════════════════════════════════════════════════════════╗
+║                  RECOMMENDATION                            ║
+╚════════════════════════════════════════════════════════════╝
+
+1. Run organization script:
+   $ ./organize-inputs.sh
+
+2. Verify inputs/ has only .md files:
+   $ ls inputs/
+
+3. Continue using the system normally:
+   $ npm run auto:fast
+
+4. Create new PCB requirements as .md files:
+   $ nano inputs/my-new-board.md
+
+5. System will process automatically!
+
+
+═══════════════════════════════════════════════════════════
+
+STATUS: ✅ SYSTEM WORKING CORRECTLY
+ISSUE:  Files in wrong folders
+FIX:    Run ./organize-inputs.sh
+
+🚀✨

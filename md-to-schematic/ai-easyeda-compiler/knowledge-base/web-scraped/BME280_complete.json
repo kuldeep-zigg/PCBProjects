@@ -1,0 +1,391 @@
+{
+  "component": "BME280",
+  "timestamp": "2026-02-01T06:27:01.271Z",
+  "sources": {
+    "allDataSheet": {
+      "specs": {
+        "voltage": null,
+        "current": "22A",
+        "package": null,
+        "manufacturer": "BME280 Datasheet",
+        "description": null,
+        "features": [],
+        "applications": []
+      },
+      "datasheetLinks": [
+        {
+          "url": "https://www.alldatasheet.com/",
+          "text": "English"
+        },
+        {
+          "url": "https://www.alldatasheetcn.com/",
+          "text": "Chinese"
+        },
+        {
+          "url": "https://www.alldatasheetde.com/",
+          "text": "German"
+        },
+        {
+          "url": "https://www.alldatasheet.jp/",
+          "text": "Japanese"
+        },
+        {
+          "url": "https://www.alldatasheetru.com/",
+          "text": "Russian"
+        },
+        {
+          "url": "https://www.alldatasheet.co.kr/",
+          "text": "Korean"
+        },
+        {
+          "url": "https://www.alldatasheet.es/",
+          "text": "Spanish"
+        },
+        {
+          "url": "https://www.alldatasheet.fr/",
+          "text": "French"
+        },
+        {
+          "url": "https://www.alldatasheetit.com/",
+          "text": "Italian"
+        },
+        {
+          "url": "https://www.alldatasheetpt.com/",
+          "text": "Portuguese"
+        },
+        {
+          "url": "https://www.alldatasheet.pl/",
+          "text": "Polish"
+        },
+        {
+          "url": "https://www.alldatasheet.vn/",
+          "text": "Vietnamese"
+        },
+        {
+          "url": "https://www.alldatasheet.in/",
+          "text": "Indian"
+        },
+        {
+          "url": "https://www.alldatasheet.com.mx/",
+          "text": "Mexican"
+        },
+        {
+          "url": "https://www.alldatasheet.co.uk/",
+          "text": "British"
+        },
+        {
+          "url": "https://www.alldatasheet.co.nz/",
+          "text": "New Zealand"
+        },
+        {
+          "url": "https://www.alldatasheet.com/",
+          "text": "ALLDATASHEET.COM"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view.jsp?Searchword=BME280",
+          "text": "All"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?Searchword=BME280",
+          "text": "Datasheet"
+        },
+        {
+          "url": "https://www.alldatasheet.com/distributor/view.jsp?Searchword=BME280",
+          "text": "Distributor"
+        },
+        {
+          "url": "https://www.alldatasheet.com/manufacture/view.jsp?Searchword=BME280",
+          "text": "Manufacturer"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view.jsp?Searchword=BME280&sField=4",
+          "text": "BME280"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1132060/BOSCH/BME280.html",
+          "text": "BME280"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1132060/BOSCH/BME280.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163285/BOSCH/BME280.html",
+          "text": "BME280"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163285/BOSCH/BME280.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163284/BOSCH/BME280_V01.html",
+          "text": "BME280"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163284/BOSCH/BME280_V01.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163284/BOSCH/BME280_V01.html",
+          "text": "BME280"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163284/BOSCH/BME280_V01.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410656/CUI/BME-100D-T300K.html",
+          "text": "BME-100D-T300K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410656/CUI/BME-100D-T300K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410664/CUI/BME-100D-T400K.html",
+          "text": "BME-100D-T400K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410664/CUI/BME-100D-T400K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410672/CUI/BME-100D-T500K.html",
+          "text": "BME-100D-T500K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410672/CUI/BME-100D-T500K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410680/CUI/BME-100D-T600K.html",
+          "text": "BME-100D-T600K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410680/CUI/BME-100D-T600K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410660/CUI/BME-100V-T300K.html",
+          "text": "BME-100V-T300K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410660/CUI/BME-100V-T300K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410668/CUI/BME-100V-T400K.html",
+          "text": "BME-100V-T400K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410668/CUI/BME-100V-T400K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410676/CUI/BME-100V-T500K.html",
+          "text": "BME-100V-T500K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410676/CUI/BME-100V-T500K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410684/CUI/BME-100V-T600K.html",
+          "text": "BME-100V-T600K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410684/CUI/BME-100V-T600K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410657/CUI/BME-256D-T300K.html",
+          "text": "BME-256D-T300K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410657/CUI/BME-256D-T300K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410665/CUI/BME-256D-T400K.html",
+          "text": "BME-256D-T400K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410665/CUI/BME-256D-T400K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410673/CUI/BME-256D-T500K.html",
+          "text": "BME-256D-T500K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410673/CUI/BME-256D-T500K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410681/CUI/BME-256D-T600K.html",
+          "text": "BME-256D-T600K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410681/CUI/BME-256D-T600K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410661/CUI/BME-256V-T300K.html",
+          "text": "BME-256V-T300K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410661/CUI/BME-256V-T300K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410669/CUI/BME-256V-T400K.html",
+          "text": "BME-256V-T400K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410669/CUI/BME-256V-T400K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410677/CUI/BME-256V-T500K.html",
+          "text": "BME-256V-T500K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410677/CUI/BME-256V-T500K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410685/CUI/BME-256V-T600K.html",
+          "text": "BME-256V-T600K"
+        },
+        {
+          "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410685/CUI/BME-256V-T600K.html",
+          "text": ""
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=2&sField=0",
+          "text": "2"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=3&sField=0",
+          "text": "3"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=4&sField=0",
+          "text": "4"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=5&sField=0",
+          "text": "5"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=2&sField=0",
+          "text": "2"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=3&sField=0",
+          "text": "3"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=4&sField=0",
+          "text": "4"
+        },
+        {
+          "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=5&sField=0",
+          "text": "5"
+        },
+        {
+          "url": "https://www.alldatasheet.com/distributor/view.jsp?Searchword=BME280",
+          "text": "BME280 Distributor More"
+        },
+        {
+          "url": "https://www.alldatasheet.com/bottom_bar/about_alldatasheet.jsp",
+          "text": "About Alldatasheet"
+        },
+        {
+          "url": "https://www.alldatasheet.com/donate.jsp",
+          "text": "[ DONATE ]"
+        },
+        {
+          "url": "https://www.alldatasheet.com/bottom_bar/about_alldatasheet.jsp",
+          "text": "About Alldatasheet"
+        },
+        {
+          "url": "https://upload.alldatasheet.com/",
+          "text": "Datasheet Upload"
+        },
+        {
+          "url": "https://www.alldatasheet.com/",
+          "text": "Alldatasheet.com"
+        },
+        {
+          "url": "https://www.alldatasheet.com/",
+          "text": "Alldatasheet.com"
+        },
+        {
+          "url": "https://www.alldatasheet.net/",
+          "text": "Alldatasheet.net"
+        },
+        {
+          "url": "https://www.alldatasheetcn.com/",
+          "text": "Alldatasheetcn.com"
+        },
+        {
+          "url": "https://www.alldatasheetde.com/",
+          "text": "Alldatasheetde.com"
+        },
+        {
+          "url": "https://www.alldatasheet.jp/",
+          "text": "Alldatasheet.jp"
+        },
+        {
+          "url": "https://www.alldatasheetru.com/",
+          "text": "Alldatasheetru.com"
+        },
+        {
+          "url": "https://www.alldatasheet.co.kr/",
+          "text": "Alldatasheet.co.kr"
+        },
+        {
+          "url": "https://www.alldatasheet.es/",
+          "text": "Alldatasheet.es"
+        },
+        {
+          "url": "https://www.alldatasheet.fr/",
+          "text": "Alldatasheet.fr"
+        },
+        {
+          "url": "https://www.alldatasheetit.com/",
+          "text": "Alldatasheetit.com"
+        },
+        {
+          "url": "https://www.alldatasheetpt.com/",
+          "text": "Alldatasheetpt.com"
+        },
+        {
+          "url": "https://www.alldatasheet.pl/",
+          "text": "Alldatasheet.pl"
+        },
+        {
+          "url": "https://www.alldatasheet.vn/",
+          "text": "Alldatasheet.vn"
+        },
+        {
+          "url": "https://www.alldatasheet.in/",
+          "text": "Alldatasheet.in"
+        },
+        {
+          "url": "https://www.alldatasheet.com.mx/",
+          "text": "Alldatasheet.com.mx"
+        },
+        {
+          "url": "https://www.alldatasheet.co.uk/",
+          "text": "Alldatasheet.co.uk"
+        },
+        {
+          "url": "https://www.alldatasheet.co.nz/",
+          "text": "Alldatasheet.co.nz"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "urls": [
+    "https://www.alldatasheet.com/view.jsp?Searchword=LM358"
+  ],
+  "visits": [
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=LM358",
+      "component": "LM358",
+      "timestamp": "2026-02-01T06:41:40.346Z",
+      "dataSize": 97503
+    }
+  ],
+  "components": {
+    "LM358": [
+      {
+        "url": "https://www.alldatasheet.com/view.jsp?Searchword=LM358",
+        "timestamp": "2026-02-01T06:41:40.347Z"
+      }
+    ]
+  },
+  "lastUpdated": "2026-02-01T06:41:40.347Z"
+}

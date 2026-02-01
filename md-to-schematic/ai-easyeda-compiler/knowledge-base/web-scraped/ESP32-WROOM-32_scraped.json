@@ -1,0 +1,401 @@
+{
+  "component": "ESP32-WROOM-32",
+  "source": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32",
+  "timestamp": "2026-02-01T06:26:53.789Z",
+  "specs": {
+    "voltage": null,
+    "current": "32Ma",
+    "package": null,
+    "manufacturer": "Datasheet\tDescription\tBuy Now",
+    "description": null,
+    "features": [],
+    "applications": []
+  },
+  "datasheetLinks": [
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "English"
+    },
+    {
+      "url": "https://www.alldatasheetcn.com/",
+      "text": "Chinese"
+    },
+    {
+      "url": "https://www.alldatasheetde.com/",
+      "text": "German"
+    },
+    {
+      "url": "https://www.alldatasheet.jp/",
+      "text": "Japanese"
+    },
+    {
+      "url": "https://www.alldatasheetru.com/",
+      "text": "Russian"
+    },
+    {
+      "url": "https://www.alldatasheet.co.kr/",
+      "text": "Korean"
+    },
+    {
+      "url": "https://www.alldatasheet.es/",
+      "text": "Spanish"
+    },
+    {
+      "url": "https://www.alldatasheet.fr/",
+      "text": "French"
+    },
+    {
+      "url": "https://www.alldatasheetit.com/",
+      "text": "Italian"
+    },
+    {
+      "url": "https://www.alldatasheetpt.com/",
+      "text": "Portuguese"
+    },
+    {
+      "url": "https://www.alldatasheet.pl/",
+      "text": "Polish"
+    },
+    {
+      "url": "https://www.alldatasheet.vn/",
+      "text": "Vietnamese"
+    },
+    {
+      "url": "https://www.alldatasheet.in/",
+      "text": "Indian"
+    },
+    {
+      "url": "https://www.alldatasheet.com.mx/",
+      "text": "Mexican"
+    },
+    {
+      "url": "https://www.alldatasheet.co.uk/",
+      "text": "British"
+    },
+    {
+      "url": "https://www.alldatasheet.co.nz/",
+      "text": "New Zealand"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "ALLDATASHEET.COM"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32",
+      "text": "All"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?Searchword=ESP32-WROOM-32",
+      "text": "Datasheet"
+    },
+    {
+      "url": "https://www.alldatasheet.com/distributor/view.jsp?Searchword=ESP32-WROOM-32",
+      "text": "Distributor"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view.jsp?Searchword=ESP32-WROOM-32",
+      "text": "Manufacturer"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32&sField=4",
+      "text": "ESP32-WROOM-32"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32D&sField=4",
+      "text": "ESP32-WROOM-32D"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32E&sField=4",
+      "text": "ESP32-WROOM-32E"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32U&sField=4",
+      "text": "ESP32-WROOM-32U"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32&sField=2",
+      "text": "ESP32-WROOM-32*"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32E&sField=2",
+      "text": "ESP32-WROOM-32E"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32U&sField=2",
+      "text": "ESP32-WROOM-32U"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=ESP32-WROOM-32",
+      "text": "All"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?sField=0&Searchword=ESP32-WROOM-32&list=1230",
+      "text": "ESPRESSIF"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1148026/ESPRESSIF/ESP32-WROOM-32.html",
+      "text": "ESP32-WROOM-32"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1148026/ESPRESSIF/ESP32-WROOM-32.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1148027/ESPRESSIF/ESP32-WROOM-32D.html",
+      "text": "ESP32-WROOM-32D"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1148027/ESPRESSIF/ESP32-WROOM-32D.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1148027/ESPRESSIF/ESP32-WROOM-32E.html",
+      "text": "ESP32-WROOM-32E"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1148027/ESPRESSIF/ESP32-WROOM-32E.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1454679/ESPRESSIF/ESP32-WROOM-32E.html",
+      "text": "ESP32-WROOM-32E"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1454679/ESPRESSIF/ESP32-WROOM-32E.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743859/ESPRESSIF/ESP32-WROOM-32E.html",
+      "text": "ESP32-WROOM-32E"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743859/ESPRESSIF/ESP32-WROOM-32E.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743863/ESPRESSIF/ESP32-WROOM-32E-H4.html",
+      "text": "ESP32-WROOM-32E-H4"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743863/ESPRESSIF/ESP32-WROOM-32E-H4.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743864/ESPRESSIF/ESP32-WROOM-32E-H8.html",
+      "text": "ESP32-WROOM-32E-H8"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743864/ESPRESSIF/ESP32-WROOM-32E-H8.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743862/ESPRESSIF/ESP32-WROOM-32E-N16.html",
+      "text": "ESP32-WROOM-32E-N16"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743862/ESPRESSIF/ESP32-WROOM-32E-N16.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743867/ESPRESSIF/ESP32-WROOM-32E-N16R2.html",
+      "text": "ESP32-WROOM-32E-N16R2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743867/ESPRESSIF/ESP32-WROOM-32E-N16R2.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743860/ESPRESSIF/ESP32-WROOM-32E-N4.html",
+      "text": "ESP32-WROOM-32E-N4"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743860/ESPRESSIF/ESP32-WROOM-32E-N4.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743865/ESPRESSIF/ESP32-WROOM-32E-N4R2.html",
+      "text": "ESP32-WROOM-32E-N4R2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743865/ESPRESSIF/ESP32-WROOM-32E-N4R2.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743861/ESPRESSIF/ESP32-WROOM-32E-N8.html",
+      "text": "ESP32-WROOM-32E-N8"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743861/ESPRESSIF/ESP32-WROOM-32E-N8.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743866/ESPRESSIF/ESP32-WROOM-32E-N8R2.html",
+      "text": "ESP32-WROOM-32E-N8R2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743866/ESPRESSIF/ESP32-WROOM-32E-N8R2.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1148028/ESPRESSIF/ESP32-WROOM-32U.html",
+      "text": "ESP32-WROOM-32U"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1148028/ESPRESSIF/ESP32-WROOM-32U.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1454678/ESPRESSIF/ESP32-WROOM-32UE.html",
+      "text": "ESP32-WROOM-32UE"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1454678/ESPRESSIF/ESP32-WROOM-32UE.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743871/ESPRESSIF/ESP32-WROOM-32UE-H4.html",
+      "text": "ESP32-WROOM-32UE-H4"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743871/ESPRESSIF/ESP32-WROOM-32UE-H4.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743872/ESPRESSIF/ESP32-WROOM-32UE-H8.html",
+      "text": "ESP32-WROOM-32UE-H8"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743872/ESPRESSIF/ESP32-WROOM-32UE-H8.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743870/ESPRESSIF/ESP32-WROOM-32UE-N16.html",
+      "text": "ESP32-WROOM-32UE-N16"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743870/ESPRESSIF/ESP32-WROOM-32UE-N16.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743875/ESPRESSIF/ESP32-WROOM-32UE-N16R2.html",
+      "text": "ESP32-WROOM-32UE-N16R2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743875/ESPRESSIF/ESP32-WROOM-32UE-N16R2.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743868/ESPRESSIF/ESP32-WROOM-32UE-N4.html",
+      "text": "ESP32-WROOM-32UE-N4"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1743868/ESPRESSIF/ESP32-WROOM-32UE-N4.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=ESP32-WROOM-32&sPage=2&sField=0",
+      "text": "2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=ESP32-WROOM-32&sPage=2&sField=0",
+      "text": "2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=2598020&p=ESP-100-POE&f=LAIRD+PLC",
+      "text": "ESP-100-POE"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view_manu_link.jsp?idx=2598020&p=ESP-100-POE&f=LAIRD+PLC",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/bottom_bar/about_alldatasheet.jsp",
+      "text": "About Alldatasheet"
+    },
+    {
+      "url": "https://www.alldatasheet.com/donate.jsp",
+      "text": "[ DONATE ]"
+    },
+    {
+      "url": "https://www.alldatasheet.com/bottom_bar/about_alldatasheet.jsp",
+      "text": "About Alldatasheet"
+    },
+    {
+      "url": "https://upload.alldatasheet.com/",
+      "text": "Datasheet Upload"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "Alldatasheet.com"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "Alldatasheet.com"
+    },
+    {
+      "url": "https://www.alldatasheet.net/",
+      "text": "Alldatasheet.net"
+    },
+    {
+      "url": "https://www.alldatasheetcn.com/",
+      "text": "Alldatasheetcn.com"
+    },
+    {
+      "url": "https://www.alldatasheetde.com/",
+      "text": "Alldatasheetde.com"
+    },
+    {
+      "url": "https://www.alldatasheet.jp/",
+      "text": "Alldatasheet.jp"
+    },
+    {
+      "url": "https://www.alldatasheetru.com/",
+      "text": "Alldatasheetru.com"
+    },
+    {
+      "url": "https://www.alldatasheet.co.kr/",
+      "text": "Alldatasheet.co.kr"
+    },
+    {
+      "url": "https://www.alldatasheet.es/",
+      "text": "Alldatasheet.es"
+    },
+    {
+      "url": "https://www.alldatasheet.fr/",
+      "text": "Alldatasheet.fr"
+    },
+    {
+      "url": "https://www.alldatasheetit.com/",
+      "text": "Alldatasheetit.com"
+    },
+    {
+      "url": "https://www.alldatasheetpt.com/",
+      "text": "Alldatasheetpt.com"
+    },
+    {
+      "url": "https://www.alldatasheet.pl/",
+      "text": "Alldatasheet.pl"
+    },
+    {
+      "url": "https://www.alldatasheet.vn/",
+      "text": "Alldatasheet.vn"
+    },
+    {
+      "url": "https://www.alldatasheet.in/",
+      "text": "Alldatasheet.in"
+    },
+    {
+      "url": "https://www.alldatasheet.com.mx/",
+      "text": "Alldatasheet.com.mx"
+    },
+    {
+      "url": "https://www.alldatasheet.co.uk/",
+      "text": "Alldatasheet.co.uk"
+    },
+    {
+      "url": "https://www.alldatasheet.co.nz/",
+      "text": "Alldatasheet.co.nz"
+    }
+  ],
+  "pageText": "\tElectronic Components Datasheet Search\t\n  English  ▼\t\nALLDATASHEET.COM\n\nPart #\nDescription\nMarking\n\nX  \n\n  \nAll\t\tDatasheet\t\tDistributor\t\tManufacturer\t\nShortcut\t  ESP32-WROOM-32(23) recommended result.\nMatch, Like\t ESP32-WROOM-32(1) ESP32-WROOM-32D(1) ESP32-WROOM-32E(3) ESP32-WROOM-32U(1)\nStart with\t ESP32-WROOM-32*(22) ESP32-WROOM-32E*(8) ESP32-WROOM-32U*(9)\nEnd\t  No Data\nIncluded\t  No Data\n\n\nManufacturer\t\n  All ESPRESSIF(23)\n\n\n\t\t\n\n\n\n\nESP32-WROOM-32 Datasheet, PDF\nSearch Partnumber : Match&Start with \"ESP32-WROOM-32\" - Total : 23 ( 1/2 Page)\nManufacturer\tPart #\tDatasheet\tDescription\n\nESPRESSIF SYSTEMS (SHAN...\tESP32-WROOM-32\t\n515Kb/25P\t32-bit MCU & 2.4 GHz Wi-Fi & BT/BLE SoCs\nESP32-WROOM-32D\t\n641Kb/27P\t32-bit MCU & 2.4 GHz Wi-Fi & BT/BLE SoCs\nESP32-WROOM-32E\t\n515Kb/25P\t32-bit MCU & 2.4 GHz Wi-Fi & BT/BLE SoCs\nESP32-WROOM-32E\t\n736Kb/35P\tESP32-D0WD-V3 embedded, Xtensa® dual-core\n2021\nESP32-WROOM-32E\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32E-H4\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32E-H8\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32E-N16\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32E-N16R2\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32E-N4\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32E-N4R2\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32E-N8\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32E-N8R2\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32U\t\n641Kb/27P\t32-bit MCU & 2.4 GHz Wi-Fi & BT/BLE SoCs\nESP32-WROOM-32UE\t\n736Kb/35P\tESP32-D0WD-V3 embedded, Xtensa® dual-core\n2021\nESP32-WROOM-32UE-H4\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32UE-H8\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32UE-N16\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32UE-N16R2\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\nESP32-WROOM-32UE-N4\t\n1Mb/33P\t2.4 GHz WiFi + Bluetooth® + Bluetooth LE module\n2023\n\n12\n\n\n\n12\n\n\n\n\n\n\nESP32-WROOM-32 Datasheet, PDF [Distributor]\nDistributor\tPart #\tManufacturer\nDatasheet\tDescription\tBuy Now\n\nElement14\tESP32-C3-13U-KIT\n\n\tRF SOLUTIONS\n\n\tWLAN COMM MODULE, 160MHZ;\t\n\n\nESP32-WROOM-32 Distributor\nDistributor\tPart #\tManufacturer\tDescription\tPrice\tQty.\nBuyNow\n\n\n\n\n\nESP32-WROOM-32 Manufacturer\nSearch Partnumber : Match&Start with \"ESP32-WROOM-32\" Total : 1 ( 1/1 Page)\t\nManufacturer\tPart #\tDatasheet\nDate\nSize\tDescription\tRohs\nPb Free\nLifecycle\tDirect Link\n\nLAIRD PLC\tESP-100-POE\t\tANTENNA BASE STATION WISP\tunknown\nunknown\nactive\t\n\n1\n\n\n\n\n\nLink URL\n\n\n\n\nAbout Alldatasheetㅣ\nAdvertisementㅣ\nContact usㅣ\nPrivacy Policyㅣ\nLink to Datasheetㅣ\nLink Exchangeㅣ\nManufacturer List\nLanguage : \nEnglish\n中文\n한국어\nfrançais\nespañol\n日本語\nDeutsch\nitaliano\nрусский\npolski\nportuguês\nTiếng việt\nIndian\nMexican\nBritish\nNew Zealand\nDoes ALLDATASHEET help your business so far?  [ DONATE ]  \n\nAbout Alldatasheet   |   Advertisement   |   Datasheet Upload   |   Contact us   |   Privacy Policy   |   Link to Datasheet   |   Link Exchange   |   Manufacturer List\nAll Rights Reserved©Alldatasheet.com\n\n\n\n\nMirror Sites\nEnglish : Alldatasheet.com  |   English : Alldatasheet.net  |   Chinese : Alldatasheetcn.com  |   German : Alldatasheetde.com  |   Japanese : Alldatasheet.jp\nRussian : Alldatasheetru.com  |   Korean : Alldatasheet.co.kr  |   Spanish : Alldatasheet.es  |   French : Alldatasheet.fr  |   Italian : Alldatasheetit.com\nPortuguese : Alldatasheetpt.com  |   Polish : Alldatasheet.pl  |   Vietnamese : Alldatasheet.vn\nIndian : Alldatasheet.in  |   Mexican : Alldatasheet.com.mx  |   British : Alldatasheet.co.uk  |   New Zealand : Alldatasheet.co.nz\n\nFamily Site : ic2ic.com  |   icmetro.com\n\n"
+}

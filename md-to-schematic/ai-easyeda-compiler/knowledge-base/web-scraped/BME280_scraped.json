@@ -1,0 +1,389 @@
+{
+  "component": "BME280",
+  "source": "https://www.alldatasheet.com/view.jsp?Searchword=BME280",
+  "timestamp": "2026-02-01T06:27:02.247Z",
+  "specs": {
+    "voltage": null,
+    "current": "22A",
+    "package": null,
+    "manufacturer": "BME280 Datasheet",
+    "description": null,
+    "features": [],
+    "applications": []
+  },
+  "datasheetLinks": [
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "English"
+    },
+    {
+      "url": "https://www.alldatasheetcn.com/",
+      "text": "Chinese"
+    },
+    {
+      "url": "https://www.alldatasheetde.com/",
+      "text": "German"
+    },
+    {
+      "url": "https://www.alldatasheet.jp/",
+      "text": "Japanese"
+    },
+    {
+      "url": "https://www.alldatasheetru.com/",
+      "text": "Russian"
+    },
+    {
+      "url": "https://www.alldatasheet.co.kr/",
+      "text": "Korean"
+    },
+    {
+      "url": "https://www.alldatasheet.es/",
+      "text": "Spanish"
+    },
+    {
+      "url": "https://www.alldatasheet.fr/",
+      "text": "French"
+    },
+    {
+      "url": "https://www.alldatasheetit.com/",
+      "text": "Italian"
+    },
+    {
+      "url": "https://www.alldatasheetpt.com/",
+      "text": "Portuguese"
+    },
+    {
+      "url": "https://www.alldatasheet.pl/",
+      "text": "Polish"
+    },
+    {
+      "url": "https://www.alldatasheet.vn/",
+      "text": "Vietnamese"
+    },
+    {
+      "url": "https://www.alldatasheet.in/",
+      "text": "Indian"
+    },
+    {
+      "url": "https://www.alldatasheet.com.mx/",
+      "text": "Mexican"
+    },
+    {
+      "url": "https://www.alldatasheet.co.uk/",
+      "text": "British"
+    },
+    {
+      "url": "https://www.alldatasheet.co.nz/",
+      "text": "New Zealand"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "ALLDATASHEET.COM"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=BME280",
+      "text": "All"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?Searchword=BME280",
+      "text": "Datasheet"
+    },
+    {
+      "url": "https://www.alldatasheet.com/distributor/view.jsp?Searchword=BME280",
+      "text": "Distributor"
+    },
+    {
+      "url": "https://www.alldatasheet.com/manufacture/view.jsp?Searchword=BME280",
+      "text": "Manufacturer"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view.jsp?Searchword=BME280&sField=4",
+      "text": "BME280"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1132060/BOSCH/BME280.html",
+      "text": "BME280"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1132060/BOSCH/BME280.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163285/BOSCH/BME280.html",
+      "text": "BME280"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163285/BOSCH/BME280.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163284/BOSCH/BME280_V01.html",
+      "text": "BME280"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163284/BOSCH/BME280_V01.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163284/BOSCH/BME280_V01.html",
+      "text": "BME280"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2163284/BOSCH/BME280_V01.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410656/CUI/BME-100D-T300K.html",
+      "text": "BME-100D-T300K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410656/CUI/BME-100D-T300K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410664/CUI/BME-100D-T400K.html",
+      "text": "BME-100D-T400K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410664/CUI/BME-100D-T400K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410672/CUI/BME-100D-T500K.html",
+      "text": "BME-100D-T500K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410672/CUI/BME-100D-T500K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410680/CUI/BME-100D-T600K.html",
+      "text": "BME-100D-T600K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410680/CUI/BME-100D-T600K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410660/CUI/BME-100V-T300K.html",
+      "text": "BME-100V-T300K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410660/CUI/BME-100V-T300K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410668/CUI/BME-100V-T400K.html",
+      "text": "BME-100V-T400K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410668/CUI/BME-100V-T400K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410676/CUI/BME-100V-T500K.html",
+      "text": "BME-100V-T500K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410676/CUI/BME-100V-T500K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410684/CUI/BME-100V-T600K.html",
+      "text": "BME-100V-T600K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410684/CUI/BME-100V-T600K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410657/CUI/BME-256D-T300K.html",
+      "text": "BME-256D-T300K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410657/CUI/BME-256D-T300K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410665/CUI/BME-256D-T400K.html",
+      "text": "BME-256D-T400K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410665/CUI/BME-256D-T400K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410673/CUI/BME-256D-T500K.html",
+      "text": "BME-256D-T500K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410673/CUI/BME-256D-T500K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410681/CUI/BME-256D-T600K.html",
+      "text": "BME-256D-T600K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410681/CUI/BME-256D-T600K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410661/CUI/BME-256V-T300K.html",
+      "text": "BME-256V-T300K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410661/CUI/BME-256V-T300K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410669/CUI/BME-256V-T400K.html",
+      "text": "BME-256V-T400K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410669/CUI/BME-256V-T400K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410677/CUI/BME-256V-T500K.html",
+      "text": "BME-256V-T500K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410677/CUI/BME-256V-T500K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410685/CUI/BME-256V-T600K.html",
+      "text": "BME-256V-T600K"
+    },
+    {
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1410685/CUI/BME-256V-T600K.html",
+      "text": ""
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=2&sField=0",
+      "text": "2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=3&sField=0",
+      "text": "3"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=4&sField=0",
+      "text": "4"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=5&sField=0",
+      "text": "5"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=2&sField=0",
+      "text": "2"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=3&sField=0",
+      "text": "3"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=4&sField=0",
+      "text": "4"
+    },
+    {
+      "url": "https://www.alldatasheet.com/view_datasheet.jsp?sSearchword=BME280&aPage=5&sField=0",
+      "text": "5"
+    },
+    {
+      "url": "https://www.alldatasheet.com/distributor/view.jsp?Searchword=BME280",
+      "text": "BME280 Distributor More"
+    },
+    {
+      "url": "https://www.alldatasheet.com/bottom_bar/about_alldatasheet.jsp",
+      "text": "About Alldatasheet"
+    },
+    {
+      "url": "https://www.alldatasheet.com/donate.jsp",
+      "text": "[ DONATE ]"
+    },
+    {
+      "url": "https://www.alldatasheet.com/bottom_bar/about_alldatasheet.jsp",
+      "text": "About Alldatasheet"
+    },
+    {
+      "url": "https://upload.alldatasheet.com/",
+      "text": "Datasheet Upload"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "Alldatasheet.com"
+    },
+    {
+      "url": "https://www.alldatasheet.com/",
+      "text": "Alldatasheet.com"
+    },
+    {
+      "url": "https://www.alldatasheet.net/",
+      "text": "Alldatasheet.net"
+    },
+    {
+      "url": "https://www.alldatasheetcn.com/",
+      "text": "Alldatasheetcn.com"
+    },
+    {
+      "url": "https://www.alldatasheetde.com/",
+      "text": "Alldatasheetde.com"
+    },
+    {
+      "url": "https://www.alldatasheet.jp/",
+      "text": "Alldatasheet.jp"
+    },
+    {
+      "url": "https://www.alldatasheetru.com/",
+      "text": "Alldatasheetru.com"
+    },
+    {
+      "url": "https://www.alldatasheet.co.kr/",
+      "text": "Alldatasheet.co.kr"
+    },
+    {
+      "url": "https://www.alldatasheet.es/",
+      "text": "Alldatasheet.es"
+    },
+    {
+      "url": "https://www.alldatasheet.fr/",
+      "text": "Alldatasheet.fr"
+    },
+    {
+      "url": "https://www.alldatasheetit.com/",
+      "text": "Alldatasheetit.com"
+    },
+    {
+      "url": "https://www.alldatasheetpt.com/",
+      "text": "Alldatasheetpt.com"
+    },
+    {
+      "url": "https://www.alldatasheet.pl/",
+      "text": "Alldatasheet.pl"
+    },
+    {
+      "url": "https://www.alldatasheet.vn/",
+      "text": "Alldatasheet.vn"
+    },
+    {
+      "url": "https://www.alldatasheet.in/",
+      "text": "Alldatasheet.in"
+    },
+    {
+      "url": "https://www.alldatasheet.com.mx/",
+      "text": "Alldatasheet.com.mx"
+    },
+    {
+      "url": "https://www.alldatasheet.co.uk/",
+      "text": "Alldatasheet.co.uk"
+    },
+    {
+      "url": "https://www.alldatasheet.co.nz/",
+      "text": "Alldatasheet.co.nz"
+    }
+  ],
+  "pageText": "\tElectronic Components Datasheet Search\t\n  English  ▼\t\nALLDATASHEET.COM\n\nPart #\nDescription\nMarking\n\nX  \n\n  \nAll\t\tDatasheet\t\tDistributor\t\tManufacturer\t\nShortcut\t  BME280(3) recommended result.\nMatch, Like\t BME280(2)\nStart with\t  No Data\nEnd\t  No Data\nIncluded\t  No Data\n\n\nManufacturer\t\n\n\n\n\t\t\n\n\n\n\nBME280 Datasheet, PDF\nSearch Partnumber : Match&Start with \"BME280\" - Total : 3 ( 1/1 Page)\nManufacturer\tPart #\tDatasheet\tDescription\n\nBosch Sensortec GmbH\tBME280\t\n1Mb/55P\tCombined humidity and pressure sensor\nBME280\t\n2Mb/60P\tCombined humidity and pressure sensor\nFebruary 2024\nBME280\t\n2Mb/60P\tCombined humidity and pressure sensor\nFebruary 2024\nSearch Partnumber : Start with \"BME280\" - Total : 95 ( 1/5 Page)\n\nBosch Sensortec GmbH\tBME280\t\n2Mb/60P\tCombined humidity and pressure sensor\nFebruary 2024\n\nCUI INC\tBME-100D-T300K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-100D-T400K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-100D-T500K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-100D-T600K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-100V-T300K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-100V-T400K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-100V-T500K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-100V-T600K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-256D-T300K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-256D-T400K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-256D-T500K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-256D-T600K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-256V-T300K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-256V-T400K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-256V-T500K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\nBME-256V-T600K\t\n343Kb/6P\tmodular incremental encoder\n01/2009\n\n12 3 4 5\n\n\n\n12 3 4 5\n\n\n\n\n\n\nBME280 Datasheet, PDF [Distributor]\nDistributor\tPart #\tManufacturer\nDatasheet\tDescription\tBuy Now\n\nElement14\tBMENOC0311\n\n\tSQUARE D BY SCHNEIDER ELECTRIC\n\n\tETHERNET SWITCH, 10MBPS, 100MBPS, RJ45; No. of Ports:3Ports; Ethernet Switch Application:Industrial;...\t\nBME6-2RQ173\n\n\tHONEYWELL\n\n\tLIMIT SWITCH, SPDT, 22A, 125V, SIDE MNT; Limit Switch Actuator:Top Pin Plunger; Contact Configuratio...\t\n\n\nBME280 Distributor\nDistributor\tPart #\tManufacturer\tDescription\tPrice\tQty.\nBuyNow\n\nDigiKey\tBME280\n\n\tBosch Sensortec\tSENSOR PRESSURE HUMIDITY TEMP\nRoHS : Compliant\t\n10,000 : $2.45417\n\n\t50,000\n\nSHUTTLE-BOARD-3.0-BME280\n\n\tBosch Sensortec\tSHUTTLE BOARD 3.0 BME280\t\n1 : $15.88\n\n\t8\n\n\nMouser Electronics\tBME280\n\n\tBosch Sensortec\tAir Quality Sensors MEMS humidity, pressure and temperature sensor\nRoHS : Compliant\t\n1 : $4.04\n5 : $3.62\n10 : $3.46\n25 : $3.27\n50 : $3.15\n100 : $3.03\n500 : $2.79\n1,000 : $2.76\n2,500 : $2.46\n\n\t15,255\n\nBME280\n\n\tBosch Sensortec\tAir Quality Sensors MEMS humidity, pressure and temperature sensor\nRoHS : Compliant\t\n1 : $4.03\n5 : $3.61\n10 : $3.46\n25 : $3.27\n50 : $3.14\n100 : $3.02\n500 : $2.79\n1,000 : $2.76\n2,500 : $2.46\n\n\t10,077\n\n\nArrow Electronics\tBME280\n\n\tBosch Sensortec\tPressure,Temperature and Humidity Sensor Digital Output 1.8V 8-Pin LGA T/R\nRoHS : Compliant\t\n6,000 : $2.308\n3,000 : $2.346\n1,000 : $2.37\n500 : $2.622\n250 : $2.768\n100 : $2.796\n25 : $2.881\n10 : $3.101\n1 : $3.207\n\n\t9,399\n\n\nFuture Electronics\tBME280\n\n\tBosch Sensortec\tBME280 1.71 to 3.6 V Combined Humidity and Pressure Sensor - LGA-8\nRoHS : Compliant\t\n5,000 : $2.96\n1,000 : $3.15\n150 : $3.37\n20 : $3.6\n1 : $3.94\n\n\t13\n\nBME280\n\n\tBosch Sensortec\tBME280 1.71 to 3.6 V Combined Humidity and Pressure Sensor - LGA-8\nRoHS : Compliant\t\n10,000 : $2.02\n\n\t0\n\n\nTME\tSS-BME280#I2C\n\n\tR&D Software Solutions SRL\tAccessories: expansion board; I2C; 3.3VDC,5VDC; Comp: BME280\t\n1 : $22.9\n\n\t0\n\n\nChip 1 Exchange\tBME280\n\n\tBosch Sensortec\tINSTOCK\nRoHS : Compliant\t\n\t1,899\n\n\nMaritex\tBME280\n\n\tBosch Sensortec\tAir Quality Sensors; BOSCH; BME280; LGA; Lead Free; 8\nRoHS : Compliant\t\n10,000 : $2.271\n2,500 : $2.271\n1,000 : $2.546\n500 : $2.575\n100 : $2.793\n50 : $2.896\n25 : $3.015\n10 : $3.191\n5 : $3.328\n1 : $3.714\n\n\t9,500\n\n\nWin Source Electronics\tBME280\n\n\tBosch Sensortec\tSENSOR PRESSURE HUMIDITY TEMP\nRoHS : Compliant\t\n111 : $2.7132\n89 : $2.8235\n69 : $2.9338\n48 : $3.1544\n31 : $3.2647\n15 : $3.4853\n\n\t21,382\n\n\nBME280 Distributor More\n\n\n\n\nBME280 Manufacturer\nSearch Partnumber : Match&Start with \"BME280\" Total : 0 ( 1/1 Page)\t\n\nNo Search Result...\nMany thanks for your attention.\nI regret to inform you that the part number you entered is either invalid or we don't carry on our web.\nwe will update the requested part number on or product list of datasheet as we do it on a daily basis. thank you again and we will keep your posted.\n\n\n\n\n\n\n\nLink URL\n\n\n\n\nAbout Alldatasheetㅣ\nAdvertisementㅣ\nContact usㅣ\nPrivacy Policyㅣ\nLink to Datasheetㅣ\nLink Exchangeㅣ\nManufacturer List\nLanguage : \nEnglish\n中文\n한국어\nfrançais\nespañol\n日本語\nDeutsch\nitaliano\nрусский\npolski\nportuguês\nTiếng việt\nIndian\nMexican\nBritish\nNew Zealand\nDoes ALLDATASHEET help your business so far?  [ DONATE ]  \n\nAbout Alldatasheet   |   Advertisement   |   Datasheet Upload   |   Contac"
+}

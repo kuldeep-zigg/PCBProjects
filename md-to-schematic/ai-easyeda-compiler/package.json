@@ -1,0 +1,38 @@
+{
+  "name": "ai-easyeda-compiler",
+  "version": "2.0.0",
+  "description": "Production-grade AI-powered EasyEDA schematic compiler with full integration",
+  "main": "compiler-mvp.js",
+  "scripts": {
+    "run": "node cli.js",
+    "start": "node cli.js",
+    "compile:watch": "nodemon compiler-mvp.js",
+    "quick-start": "node cli.js compile && node cli.js integrate",
+    "full-pipeline": "node cli.js compile && node cli.js convert"
+  },
+  "keywords": [
+    "easyeda",
+    "pcb",
+    "ai",
+    "ollama",
+    "electronics",
+    "schematic",
+    "compiler",
+    "integration",
+    "automation"
+  ],
+  "author": "Zigg AI Systems",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "pdf-parse": "^1.1.1",
+    "puppeteer": "^24.36.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

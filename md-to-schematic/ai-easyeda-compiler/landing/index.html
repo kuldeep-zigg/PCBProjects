@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spec to Schematic — PCB from text in minutes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a href="#" class="logo">Spec → Schematic</a>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta" class="btn btn-sm">Get started free</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Turn your PCB spec into a schematic in minutes</h1>
+        <p class="hero-sub">Describe your board in plain text. Get an EasyEDA-ready schematic and BOM. No EDA expertise required.</p>
+        <div class="hero-cta">
+          <a href="#cta" class="btn btn-primary">Try free — 3 projects/month</a>
+          <span class="hero-note">No card required</span>
+        </div>
+        <div class="hero-preview">
+          <div class="preview-box">
+            <span class="preview-label">Input: markdown spec</span>
+            <code>ESP32 + BME280 sensor, 3.3V, I2C, 4-layer</code>
+          </div>
+          <span class="preview-arrow">→</span>
+          <div class="preview-box">
+            <span class="preview-label">Output: schematic.json + BOM</span>
+            <code>EasyEDA import, LCSC part list</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section how">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Write your spec</strong> — Components, voltages, interfaces (markdown or form).</li>
+          <li><strong>AI generates schematic</strong> — Local models + component DB (Nexar, datasheets).</li>
+          <li><strong>Download & import</strong> — EasyEDA JSON + BOM; open in EasyEDA and iterate.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+      <div class="wrap">
+        <h2>Pricing</h2>
+        <div class="plans">
+          <div class="plan plan-free">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <p class="period">forever</p>
+            <ul>
+              <li>3 projects per month</li>
+              <li>Markdown → schematic + BOM</li>
+              <li>EasyEDA JSON export</li>
+              <li>Community support</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline">Get started</a>
+          </div>
+          <div class="plan plan-pro">
+            <span class="badge">Pro</span>
+            <h3>Pro</h3>
+            <p class="price">$19</p>
+            <p class="period">/month</p>
+            <ul>
+              <li>Unlimited projects</li>
+              <li>Priority generation</li>
+              <li>BOM with LCSC links</li>
+              <li>Email support</li>
+            </ul>
+            <!-- Pro: replace href="#" with your Stripe Payment Link or Gumroad URL -->
+            <a href="#" class="btn btn-primary" id="pro-button">Start Pro trial</a>
+          </div>
+        </div>
+        <p class="pricing-note">Payments via Stripe · Cancel anytime</p>
+      </div>
+    </section>
+
+    <section id="cta" class="section cta">
+      <div class="wrap">
+        <h2>Start with the free tier</h2>
+        <p>No credit card. 3 projects/month. Upgrade when you’re ready.</p>
+        <!-- REPLACE BEFORE GO LIVE: Form = YOUR_FORM_ID in action → Formspree ID; Pro = href="#" on #pro-button → Stripe/Gumroad URL -->
+        <form class="cta-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="signup-form">
+          <input type="email" name="email" placeholder="you@company.com" required>
+          <input type="hidden" name="_subject" value="Spec to Schematic — Free signup">
+          <button type="submit" class="btn btn-primary">Get started free</button>
+        </form>
+        <p class="cta-note">We’ll send a link to run your first spec → schematic. Or <a href="https://github.com/your-repo/ai-easyeda-compiler">run it locally</a> with our open CLI.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Spec → Schematic · PCB from spec, powered by local AI</p>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Form submits to Formspree; optional redirect after submit (set in Formspree dashboard or via _next)
+    // document.getElementById('signup-form').addEventListener('submit', function() { ... });
+  </script>
+</body>
+</html>

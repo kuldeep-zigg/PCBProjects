@@ -1,0 +1,31 @@
+{
+  "component": "TSAL6400",
+  "voltage": {
+    "min": "-5.2V",
+    "typ": "-4.8V",
+    "max": "-3.6V"
+  },
+  "current": {
+    "operating": "50 mA",
+    "sleep": "1 μA"
+  },
+  "package": "TO-46 (SMD)",
+  "pins": "2",
+  "temperature": {
+    "min": "-40°C",
+    "max": "85°C"
+  },
+  "features": [
+    "High Sensitivity",
+    "Low Power Consumption"
+  ],
+  "applications": [
+    "Photodiode",
+    "Optical Sensor"
+  ],
+  "manufacturer": "Vishay Semiconductors",
+  "description": "InGaAs Photodetector",
+  "parsed": true,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/TSAL6400+IC.html",
+  "extracted_at": "2026-02-01T07:12:57.196Z"
+}

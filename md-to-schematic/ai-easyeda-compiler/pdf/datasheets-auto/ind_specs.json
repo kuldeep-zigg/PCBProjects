@@ -1,0 +1,17 @@
+{
+  "component": "on other websites or databases",
+  "voltage": {
+    "min": null,
+    "typ": null,
+    "max": null
+  },
+  "current": {
+    "operating": null
+  },
+  "package": null,
+  "manufacturer": null,
+  "raw": "After analyzing the webpage text, I was unable to find any specifications for the IND component. The webpage appears to be a search result page with multiple datasheets listed, but none of them provide detailed specifications for the IND component.\n\nHowever, I can suggest that you try searching for the IND component on other websites or databases, such as Digi-Key, Mouser, or Octopart, which may have more comprehensive and accurate information about the component.",
+  "parsed": false,
+  "source_url": "https://www.alldatasheet.com/view.jsp?Searchword=IND&sField=2",
+  "extracted_at": "2026-02-01T05:22:23.533Z"
+}

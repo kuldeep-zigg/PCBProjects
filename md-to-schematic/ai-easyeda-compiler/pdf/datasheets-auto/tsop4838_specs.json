@@ -1,0 +1,25 @@
+{
+  "component": "TSOP4838",
+  "voltage": {
+    "min": "",
+    "typ": "",
+    "max": ""
+  },
+  "current": {
+    "operating": "",
+    "sleep": ""
+  },
+  "package": "",
+  "pins": "",
+  "temperature": {
+    "min": "",
+    "max": ""
+  },
+  "features": [],
+  "applications": [],
+  "manufacturer": "Vishay",
+  "description": "",
+  "parsed": true,
+  "source_url": "https://www.vishay.com/docs/tsop4838.pdf",
+  "extracted_at": "2026-02-01T07:13:26.166Z"
+}

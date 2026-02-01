@@ -1,0 +1,40 @@
+{
+  "name": "pcb-ai-training",
+  "version": "2.0.0",
+  "description": "Multi-Model AI System for PCB Design with EasyEDA Integration",
+  "type": "module",
+  "scripts": {
+    "generate-training": "node training-data-generator.js",
+    "test-assistant": "node ai-design-assistant.js",
+    "ollama-check": "node ollama-integration.js",
+    "ollama-analyze": "node ollama-integration.js analyze",
+    "ollama-chat": "node ollama-integration.js chat",
+    "multi-check": "node multi-model-orchestrator.js check",
+    "multi-workflow": "node multi-model-orchestrator.js workflow",
+    "multi-analyze": "node multi-model-orchestrator.js analyze",
+    "multi-collaborate": "node multi-model-orchestrator.js collaborate",
+    "multi-calculate": "node multi-model-orchestrator.js calculate",
+    "datasheet-list": "node datasheet-reader.js list",
+    "datasheet-show": "node datasheet-reader.js show",
+    "datasheet-export": "node datasheet-reader.js export ./datasheet-library.json"
+  },
+  "keywords": [
+    "pcb",
+    "ai",
+    "electronics",
+    "easyeda",
+    "machine-learning",
+    "training-data",
+    "deepseek",
+    "llama",
+    "phi",
+    "multi-model",
+    "orchestrator"
+  ],
+  "author": "Zigg",
+  "license": "MIT",
+  "dependencies": {},
+  "optionalDependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}
