@@ -1,0 +1,17 @@
+{
+  "component": null,
+  "voltage": {
+    "min": null,
+    "typ": null,
+    "max": null
+  },
+  "current": {
+    "operating": null
+  },
+  "package": null,
+  "manufacturer": null,
+  "raw": "After analyzing the webpage text, I was unable to extract any relevant specifications for the CLAY component. The webpage only contains a warning message.\n\nHowever, if you provide me with the actual datasheet webpage text for the CLAY component, I'll be happy to help you extract the required specifications and return them as a valid JSON object.",
+  "parsed": false,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/CLAY+IC.html",
+  "extracted_at": "2026-02-01T22:19:37.642Z"
+}

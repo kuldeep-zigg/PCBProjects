@@ -1,0 +1,36 @@
+{
+  "component": "always use 100nF bypass capacitors near each IC",
+  "sources": {
+    "allDataSheet": {
+      "searchUrl": "https://www.alldatasheet.com/view.jsp?Searchword=always%20use%20100nF%20bypass%20capacitors%20near%20each%20IC",
+      "datasheets": [],
+      "detailedSpecs": null,
+      "htmlLength": 37145
+    },
+    "github": {
+      "query": "always use 100nF bypass capacitors near each IC",
+      "repositories": [],
+      "totalFound": 0
+    },
+    "publicAPIs": {
+      "component": "always use 100nF bypass capacitors near each IC",
+      "results": [
+        {
+          "source": "SnapEDA",
+          "searchUrl": "https://www.snapeda.com/search/?q=always%20use%20100nF%20bypass%20capacitors%20near%20each%20IC",
+          "note": "Visit URL for component symbols and footprints"
+        }
+      ],
+      "note": "Most component APIs require API keys. Check MASTER.md for setup."
+    },
+    "webScrape": {
+      "component": "always use 100nF bypass capacitors near each IC",
+      "specs": {},
+      "note": "Install Puppeteer for advanced scraping: npm install puppeteer"
+    }
+  },
+  "timestamp": "2026-02-01T22:20:13.811Z",
+  "aiSynthesis": {
+    "error": "AI synthesis failed"
+  }
+}

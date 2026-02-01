@@ -1,0 +1,30 @@
+{
+  "project": "PCB2",
+  "timestamp": "2026-02-01T22:16:50.217Z",
+  "components": [
+    {
+      "id": "U1",
+      "name": "GENERIC-IC",
+      "package": "SOIC-8, TSSOP-8",
+      "voltage": "+3.3V",
+      "position": {
+        "x": 100,
+        "y": 100
+      }
+    }
+  ],
+  "nets": [
+    {
+      "name": "VCC",
+      "connections": [
+        "U1.VCC"
+      ]
+    },
+    {
+      "name": "GND",
+      "connections": [
+        "U1.GND"
+      ]
+    }
+  ]
+}

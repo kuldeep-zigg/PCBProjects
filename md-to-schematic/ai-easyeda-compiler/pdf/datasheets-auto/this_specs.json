@@ -1,0 +1,17 @@
+{
+  "component": null,
+  "voltage": {
+    "min": null,
+    "typ": null,
+    "max": null
+  },
+  "current": {
+    "operating": null
+  },
+  "package": null,
+  "manufacturer": null,
+  "raw": "I'd be happy to help you extract the specifications from the webpage text. However, I don't see any webpage text provided. Please provide the actual webpage text for the THIS component, and I'll extract the specifications in the requested format.\n\nOnce I have the webpage text, I'll return a JSON object with the extracted specifications.",
+  "parsed": false,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/THIS+IC.html",
+  "extracted_at": "2026-02-01T22:13:10.543Z"
+}

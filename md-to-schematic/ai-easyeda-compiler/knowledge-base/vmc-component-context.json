@@ -1,0 +1,104 @@
+{
+  "totalRules": 50,
+  "totalComponents": 12,
+  "componentContext": [
+    {
+      "component": "capacitor",
+      "mentionedInRules": [
+        "Always use 100nF bypass capacitors near every IC power pin",
+        "Understand why bulk capacitors (100–1000µF) are needed near motors",
+        "Learn difference between bypass vs bulk capacitors"
+      ],
+      "count": 3
+    },
+    {
+      "component": "100nf",
+      "mentionedInRules": [
+        "Always use 100nF bypass capacitors near every IC power pin"
+      ],
+      "count": 1
+    },
+    {
+      "component": "led",
+      "mentionedInRules": [
+        "Separate dirty (motors, LEDs) from clean (MCU, sensors) areas",
+        "Always give ESP32 a clean, well-decoupled 3.3V rail",
+        "Always keep LED PWM currents out of sensor ground paths"
+      ],
+      "count": 3
+    },
+    {
+      "component": "sensor",
+      "mentionedInRules": [
+        "Separate dirty (motors, LEDs) from clean (MCU, sensors) areas",
+        "Learn why analog sensors need RC filters",
+        "Learn why digital sensors are more noise-resistant",
+        "Always keep LED PWM currents out of sensor ground paths"
+      ],
+      "count": 4
+    },
+    {
+      "component": "flyback",
+      "mentionedInRules": [
+        "Always add flyback protection for motors and coils"
+      ],
+      "count": 1
+    },
+    {
+      "component": "ldo",
+      "mentionedInRules": [
+        "Never power MCU directly from 24V (learn buck → LDO strategy)"
+      ],
+      "count": 1
+    },
+    {
+      "component": "connector",
+      "mentionedInRules": [
+        "Always make power connectors keyed and polarity-safe",
+        "Never use two identical swappable connectors on the same board",
+        "Use different connector families per voltage domain"
+      ],
+      "count": 3
+    },
+    {
+      "component": "resistor",
+      "mentionedInRules": [
+        "Learn why 0Ω resistors are debugging tools"
+      ],
+      "count": 1
+    },
+    {
+      "component": "100ms",
+      "mentionedInRules": [
+        "Learn why starting motors 100ms apart reduces problems"
+      ],
+      "count": 1
+    },
+    {
+      "component": "esp32",
+      "mentionedInRules": [
+        "Learn why ESP32 Wi-Fi causes current spikes",
+        "Always give ESP32 a clean, well-decoupled 3.3V rail",
+        "Learn antenna keepout rules for ESP32 modules",
+        "Prefer ESP32 modules over bare chips as a beginner"
+      ],
+      "count": 4
+    },
+    {
+      "component": "rs485",
+      "mentionedInRules": [
+        "Learn why RS485 is better than GPIO spaghetti for trays",
+        "Learn why RS485 is better than GPIO spaghetti for trays"
+      ],
+      "count": 2
+    },
+    {
+      "component": "motor driver",
+      "mentionedInRules": [
+        "Learn how protected motor drivers reduce field failures"
+      ],
+      "count": 1
+    }
+  ],
+  "timestamp": "2026-02-01T22:35:06.255Z"
+}

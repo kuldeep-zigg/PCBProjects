@@ -6,7 +6,7 @@
     "max": "-3.6V"
   },
   "current": {
-    "operating": "50 mA",
+    "operating": "20 mA",
     "sleep": "1 μA"
   },
   "package": "TO-46 (SMD)",
@@ -20,12 +20,12 @@
     "Low Power Consumption"
   ],
   "applications": [
-    "Photodiode",
-    "Optical Sensor"
+    "Infrared Remote Control Receivers",
+    "Infrared Data Transmission Systems"
   ],
-  "manufacturer": "Vishay Semiconductors",
-  "description": "InGaAs Photodetector",
+  "manufacturer": "OSRAM Opto Semiconductors GmbH",
+  "description": "Infrared Emitting Diode (IRED)",
   "parsed": true,
   "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/TSAL6400+IC.html",
-  "extracted_at": "2026-02-01T07:12:57.196Z"
+  "extracted_at": "2026-02-01T21:48:27.660Z"
 }

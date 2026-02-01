@@ -1,0 +1,107 @@
+{
+  "component": "esp32",
+  "sources": {
+    "allDataSheet": {
+      "searchUrl": "https://www.alldatasheet.com/view.jsp?Searchword=esp32",
+      "datasheets": [],
+      "detailedSpecs": null,
+      "htmlLength": 62052
+    },
+    "github": {
+      "query": "esp32",
+      "repositories": [
+        {
+          "name": "Tasmota",
+          "description": "Alternative firmware for ESP8266 and ESP32 based devices with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX. Full documentation at",
+          "stars": 24094,
+          "url": "https://github.com/arendst/Tasmota",
+          "readme": "https://api.github.com/repos/arendst/Tasmota/readme"
+        },
+        {
+          "name": "xiaozhi-esp32",
+          "description": "An MCP-based chatbot | 一个基于MCP的聊天机器人",
+          "stars": 23729,
+          "url": "https://github.com/78/xiaozhi-esp32",
+          "readme": "https://api.github.com/repos/78/xiaozhi-esp32/readme"
+        },
+        {
+          "name": "WLED",
+          "description": "Control WS2812B and many more types of digital RGB LEDs with an ESP32 over WiFi!",
+          "stars": 17436,
+          "url": "https://github.com/wled/WLED",
+          "readme": "https://api.github.com/repos/wled/WLED/readme"
+        },
+        {
+          "name": "Marlin",
+          "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine.",
+          "stars": 17272,
+          "url": "https://github.com/MarlinFirmware/Marlin",
+          "readme": "https://api.github.com/repos/MarlinFirmware/Marlin/readme"
+        },
+        {
+          "name": "tinygo",
+          "description": "Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.",
+          "stars": 17128,
+          "url": "https://github.com/tinygo-org/tinygo",
+          "readme": "https://api.github.com/repos/tinygo-org/tinygo/readme"
+        },
+        {
+          "name": "arduino-esp32",
+          "description": "Arduino core for the ESP32",
+          "stars": 16213,
+          "url": "https://github.com/espressif/arduino-esp32",
+          "readme": "https://api.github.com/repos/espressif/arduino-esp32/readme"
+        },
+        {
+          "name": "esphome",
+          "description": "ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.",
+          "stars": 10499,
+          "url": "https://github.com/esphome/esphome",
+          "readme": "https://api.github.com/repos/esphome/esphome/readme"
+        },
+        {
+          "name": "ESP32Marauder",
+          "description": "A suite of WiFi/Bluetooth offensive and defensive tools for the ESP32",
+          "stars": 9741,
+          "url": "https://github.com/justcallmekoko/ESP32Marauder",
+          "readme": "https://api.github.com/repos/justcallmekoko/ESP32Marauder/readme"
+        },
+        {
+          "name": "platformio-core",
+          "description": "Your Gateway to Embedded Software Development Excellence :alien:",
+          "stars": 8858,
+          "url": "https://github.com/platformio/platformio-core",
+          "readme": "https://api.github.com/repos/platformio/platformio-core/readme"
+        },
+        {
+          "name": "xiaozhi-esp32-server",
+          "description": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
+          "stars": 8508,
+          "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+          "readme": "https://api.github.com/repos/xinnan-tech/xiaozhi-esp32-server/readme"
+        }
+      ],
+      "totalFound": 136020
+    },
+    "publicAPIs": {
+      "component": "esp32",
+      "results": [
+        {
+          "source": "SnapEDA",
+          "searchUrl": "https://www.snapeda.com/search/?q=esp32",
+          "note": "Visit URL for component symbols and footprints"
+        }
+      ],
+      "note": "Most component APIs require API keys. Check MASTER.md for setup."
+    },
+    "webScrape": {
+      "component": "esp32",
+      "specs": {},
+      "note": "Install Puppeteer for advanced scraping: npm install puppeteer"
+    }
+  },
+  "timestamp": "2026-02-01T22:34:36.202Z",
+  "aiSynthesis": {
+    "error": "AI synthesis failed"
+  }
+}

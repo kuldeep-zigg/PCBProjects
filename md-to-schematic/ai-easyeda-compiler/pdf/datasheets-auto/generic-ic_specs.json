@@ -1,0 +1,31 @@
+{
+  "component": "GENERIC-IC",
+  "voltage": {
+    "min": "-0.3V to +7.5V",
+    "typ": "+3.3V",
+    "max": "+6.0V"
+  },
+  "current": {
+    "operating": "10mA",
+    "sleep": "1μA (Typical)"
+  },
+  "package": "SOIC-8, TSSOP-8",
+  "pins": "8",
+  "temperature": {
+    "min": "-40°C to +85°C",
+    "max": "+125°C"
+  },
+  "features": [
+    "Low Power",
+    "High Speed"
+  ],
+  "applications": [
+    "General Purpose Logic",
+    "Microcontroller Interface"
+  ],
+  "manufacturer": "Generic Semiconductor Inc.",
+  "description": "8-bit Microprocessor with Integrated Memory and I/O",
+  "parsed": true,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/GENERIC-IC+IC.html",
+  "extracted_at": "2026-02-01T22:16:50.213Z"
+}

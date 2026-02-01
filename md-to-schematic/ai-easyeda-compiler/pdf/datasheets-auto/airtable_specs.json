@@ -1,0 +1,17 @@
+{
+  "component": "datasheet",
+  "voltage": {
+    "min": null,
+    "typ": null,
+    "max": null
+  },
+  "current": {
+    "operating": null
+  },
+  "package": null,
+  "manufacturer": null,
+  "raw": "I don't see any webpage text provided. Please provide the actual webpage text for the AIRTABLE component datasheet, and I'll extract the specifications as a JSON object.\n\nOnce you provide the text, I'll return the extracted JSON object in the format specified.",
+  "parsed": false,
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/AIRTABLE+IC.html",
+  "extracted_at": "2026-02-01T22:13:04.691Z"
+}

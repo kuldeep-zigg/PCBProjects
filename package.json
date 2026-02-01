@@ -1,0 +1,20 @@
+{
+  "name": "pcbprojects",
+  "version": "1.0.0",
+  "description": "VMC PCB Design Automation System",
+  "main": "vmc-pcb-copilot.js",
+  "scripts": {
+    "vmc": "node vmc-pcb-copilot.js",
+    "vmc-copilot": "node vmc-pcb-copilot.js",
+    "auto-design": "node vmc-pcb-copilot.js"
+  },
+  "keywords": [
+    "vmc",
+    "pcb",
+    "automation",
+    "vending-machine",
+    "electronics"
+  ],
+  "author": "Zigg",
+  "license": "MIT"
+}

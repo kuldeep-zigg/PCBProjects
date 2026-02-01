@@ -6,7 +6,7 @@
     "max": "+7.0V"
   },
   "current": {
-    "operating": "3 mA (max)",
+    "operating": "3 mA (Typ.)",
     "sleep": ""
   },
   "package": "DIP-16, SO-20",
@@ -17,15 +17,15 @@
   },
   "features": [
     "8-bit serial-in/parallel-out shift register",
-    "3-state"
+    "3-state outputs for bus applications"
   ],
   "applications": [
-    "Shift registers for LED displays",
-    "Data transfer between ICs"
+    "Bus-oriented systems",
+    "Data transfer between devices"
   ],
   "manufacturer": "NXP Semiconductors",
   "description": "Octal D-type flip-flop; 3-state",
   "parsed": true,
-  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/74HC595/ANALOG.html",
-  "extracted_at": "2026-02-01T07:15:06.195Z"
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/74HC595+IC.html",
+  "extracted_at": "2026-02-01T21:51:52.702Z"
 }

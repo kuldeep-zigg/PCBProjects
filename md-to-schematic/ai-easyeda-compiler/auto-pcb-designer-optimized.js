@@ -480,20 +480,22 @@ class AutoPCBDesignerOptimized {
 // ============================================================================
 
 async function main() {
-  console.log('╔════════════════════════════════════════════════════════════╗');
-  console.log('║     AUTOMATIC PCB DESIGNER - OPTIMIZED                     ║');
-  console.log('╚════════════════════════════════════════════════════════════╝\n');
-  console.log('⚡ Performance improvements:');
-  console.log('   - Parallel datasheet downloads (3x faster)');
-  console.log('   - Cached patterns & knowledge (2x faster)');
-  console.log('   - Lazy module loading (faster startup)');
-  console.log('   - Parallel output generation (30% faster)');
-  console.log('   - Memoization & retry logic\n');
-
-  const designer = new AutoPCBDesignerOptimized();
-  
-  await designer.initialize();
-  await designer.startMonitoring();
+  // console.log('╔════════════════════════════════════════════════════════════╗');
+  // console.log('║     AUTOMATIC PCB DESIGNER - OPTIMIZED                     ║');
+  // console.log('╚════════════════════════════════════════════════════════════╝\n');
+  // console.log('⚡ Performance improvements:');
+  // console.log('   - Parallel datasheet downloads (3x faster)');
+  // console.log('   - Cached patterns & knowledge (2x faster)');
+  // console.log('   - Lazy module loading (faster startup)');
+  // console.log('   - Parallel output generation (30% faster)');
+  // console.log('   - Memoization & retry logic\n');
+ console.log("main");
+ const designer = new AutoPCBDesignerOptimized();
+ console.log("designer");
+ await designer.initialize();
+ console.log("designer:i");
+ await designer.startMonitoring();
+ console.log("designer:sm");
 }
 
 if (require.main === module) {
