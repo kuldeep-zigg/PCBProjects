@@ -1,7 +1,7 @@
 # 📘 PCBProjects - Master Documentation (Single Source of Truth)
 
 **AI-Powered PCB Design System**  
-**Version:** 2.0.0  
+**Version:** 2.0.1  
 **Updated:** February 2, 2026
 
 > **✅ Note:** All npm scripts have been added to `package.json`. All commands documented here are now functional.
@@ -12,17 +12,20 @@
 
 1. [System Overview](#system-overview)
 2. [Quick Start (30 Seconds)](#quick-start)
-3. [System Requirements](#system-requirements)
-4. [Installation](#installation)
-5. [System Architecture](#system-architecture)
-6. [Core Components](#core-components)
-7. [Commands Reference](#commands-reference)
-8. [Workflows](#workflows)
-9. [Knowledge Base](#knowledge-base)
-10. [Configuration](#configuration)
-11. [File Structure](#file-structure)
-12. [Troubleshooting](#troubleshooting)
-13. [Advanced Topics](#advanced-topics)
+3. [Current Update (v2.0.1)](#current-update-v201)
+4. [Run Sequence](#run-sequence)
+5. [Command Guide](#command-guide)
+6. [System Requirements](#system-requirements)
+7. [Installation](#installation)
+8. [System Architecture](#system-architecture)
+9. [Core Components](#core-components)
+10. [Commands Reference](#commands-reference)
+11. [Workflows](#workflows)
+12. [Knowledge Base](#knowledge-base)
+13. [Configuration](#configuration)
+14. [File Structure](#file-structure)
+15. [Troubleshooting](#troubleshooting)
+16. [Advanced Topics](#advanced-topics)
 
 ---
 
@@ -84,6 +87,118 @@ npm run status
 
 # 3. Start automated design (monitors inputs/ folder every 1 min)
 npm run auto:fast
+```
+
+---
+
+## 🆕 Current Update (v2.0.1)
+
+**What’s new (documentation refresh):**
+- Added a clear **Run Sequence** for first-time setup and daily usage.
+- Added a **Command Guide** that groups commands by goal with expected outputs.
+- Refined the top-level navigation to surface the most-used commands faster.
+
+**No code changes in this update.**
+
+---
+
+## 🧭 Run Sequence
+
+Use this as the canonical order for setup and daily operation.
+
+### ✅ First-Time Setup (One-Time)
+1. **Install AI models**
+   ```bash
+   cd /Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-training
+   ./setup-models.sh
+   ```
+2. **Verify models**
+   ```bash
+   npm run multi-check
+   ```
+3. **Verify compiler system health**
+   ```bash
+   cd ../ai-easyeda-compiler
+   npm run status
+   ```
+
+### 🔁 Daily / Per-Design Run
+1. **Place your design spec** in `md-to-schematic/ai-easyeda-compiler/inputs/`
+2. **Run the automation**
+   ```bash
+   npm run auto:fast
+   ```
+3. **Review outputs** in `md-to-schematic/ai-easyeda-compiler/outputs/`
+
+### 🤖 VMC Copilot (Fast Board Artifacts)
+1. **Add/update board request** in `ai/board_requests/`
+2. **Run the copilot**
+   ```bash
+   cd /Users/zigg/Desktop/CODE/PCBProjects
+   npm run vmc
+   ```
+3. **Review outputs** in `ai/output/`
+
+---
+
+## 🧪 Command Guide (All‑in‑One, Short)
+
+### 🤖 VMC Copilot (Fast Artifacts)
+```bash
+cd /Users/zigg/Desktop/CODE/PCBProjects
+npm run vmc
+```
+**Output:** Checklist, BOM, netlist in `ai/output/`
+
+### ⚙️ Core Compiler (Daily Automation)
+```bash
+cd /Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler
+npm run status
+npm run auto:fast
+```
+**Output:** Health report + schematics/BOM in `outputs/`
+
+### 🧠 AI Training (Models + Multi‑Model Workflow)
+```bash
+cd /Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-training
+npm run multi-check
+npm run multi-workflow -- "ESP32 with WiFi"
+```
+**Output:** Model availability + multi‑model analysis
+
+---
+
+## ⚡ 1‑Line Quick Reference
+
+```bash
+cd /Users/zigg/Desktop/CODE/PCBProjects && npm run vmc; cd md-to-schematic/ai-easyeda-compiler && npm run status && npm run auto:fast; cd ../ai-training && npm run multi-check
+```
+
+---
+
+## 🧾 Printable Cheat Card
+
+```
+PCBProjects Quick Card (v2.0.1)
+-----------------------------------------------
+VMC COPILOT (FAST ARTIFACTS)
+   cd /Users/zigg/Desktop/CODE/PCBProjects
+   npm run vmc
+
+CORE COMPILER (DAILY)
+   cd /Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-easyeda-compiler
+   npm run status
+   npm run auto:fast
+
+AI TRAINING (MODELS)
+   cd /Users/zigg/Desktop/CODE/PCBProjects/md-to-schematic/ai-training
+   npm run multi-check
+   npm run multi-workflow -- "ESP32 with WiFi"
+
+OUTPUTS
+   VMC: ai/output/
+   Compiler: md-to-schematic/ai-easyeda-compiler/outputs/
+-----------------------------------------------
 ```
 
 ### 3-Step Complete Setup
