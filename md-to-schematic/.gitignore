@@ -4,3 +4,6 @@ parsed-pcb-data.json
 output/
 *.log
 .DS_Store
+
+# Playwright/Chrome for Testing binaries (too large for GitHub)
+ai-easyeda-compiler/browsers/
