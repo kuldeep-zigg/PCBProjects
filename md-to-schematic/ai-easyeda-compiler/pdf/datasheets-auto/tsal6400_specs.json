@@ -1,30 +1,31 @@
 {
   "component": "TSAL6400",
   "voltage": {
-    "min": "2.5 V",
-    "typ": "3.3 V",
-    "max": "5.5 V"
+    "min": "-5.2V",
+    "typ": "-4.8V",
+    "max": "-3.6V"
   },
   "current": {
-    "operating": "20 mA"
+    "operating": "10mA",
+    "sleep": "1μA"
   },
-  "package": "TO-46 (SMD)",
-  "pins": "1",
+  "package": "TO-46 (Plastic)",
+  "pins": "2",
   "temperature": {
-    "min": "-40 °C",
-    "max": "85 °C"
+    "min": "-40°C",
+    "max": "85°C"
   },
   "features": [
     "High Sensitivity",
     "Low Power Consumption"
   ],
   "applications": [
-    "Optical Communication Systems",
-    "Medical Devices"
+    "Infrared Remote Control Receivers",
+    "Infrared Data Link Applications"
   ],
   "manufacturer": "OSRAM Opto Semiconductors GmbH",
   "description": "Infrared Emitting Diode (IRED)",
   "parsed": true,
-  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/TSAL6400+IC.html",
-  "extracted_at": "2026-02-01T23:52:17.044Z"
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/tsal6400.html",
+  "extracted_at": "2026-02-01T23:57:01.602Z"
 }

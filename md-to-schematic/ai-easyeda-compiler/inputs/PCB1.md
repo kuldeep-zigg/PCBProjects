@@ -1,392 +1,413 @@
-# Dual PCB IR Control System – Schematic Connection Table
+# VMC Power Section – Complete Design & 4-Layer PCB Layout Guide
 
-## System Overview
+Author: Kuldeep Malviya
 
-This system consists of two PCBs:
-
-### PCB A — Control Board
-- Microcontroller: Raspberry Pi Pico
-- Function:
-  - Reads 10 IR Receivers (TSOP4838)
-  - Sends LED control data to PCB B using a 74HC595 shift register interface
-
-### PCB B — IR LED Driver Board
-- Shift Register: 74HC595
-- IR LEDs: 10x TSAL6400
-- MOSFET Drivers for high-current LED switching
+This document consolidates the full engineering conversation into a **single, production-ready reference** for designing, laying out, and manufacturing the **VMC (Vending Machine Controller) Power Section** using **EasyEDA**.
 
 ---
 
-## Power Distribution
+# Table of Contents
 
-| Signal | From | To | Voltage | Notes |
-|--------|------|----|---------|-------|
-| VCC_5V | Power Input | PCB A | +5V | Main system supply |
-| VCC_5V | PCB A | PCB B | +5V | IR LED power rail |
-| GND | Power Input | PCB A | 0V | Common Ground |
-| GND | PCB A | PCB B | 0V | Ground reference for signals |
-
----
-
-## PCB A — IR Receiver GPIO Mapping
-
-All TSOP4838 IR Receivers:
-- VCC → +3.3V
-- GND → GND
-- OUT → Dedicated GPIO pin
-
-| IR Receiver | VCC | GND | GPIO Pin | MCU Pin Name |
-|------------|-----|-----|----------|--------------|
-| IR1 | 3.3V | GND | GPIO2 | GP2 |
-| IR2 | 3.3V | GND | GPIO3 | GP3 |
-| IR3 | 3.3V | GND | GPIO4 | GP4 |
-| IR4 | 3.3V | GND | GPIO5 | GP5 |
-| IR5 | 3.3V | GND | GPIO6 | GP6 |
-| IR6 | 3.3V | GND | GPIO7 | GP7 |
-| IR7 | 3.3V | GND | GPIO8 | GP8 |
-| IR8 | 3.3V | GND | GPIO9 | GP9 |
-| IR9 | 3.3V | GND | GPIO10 | GP10 |
-| IR10 | 3.3V | GND | GPIO11 | GP11 |
+1. Overview
+2. Electrical Architecture Summary
+3. Power Flow (Functional Chain)
+4. MOSFET Reverse Protection + Gate Network
+5. Star Ground System
+6. LM2596 Buck Regulator – Pin & Stability Guide
+7. EMI Filtering & Ferrite Beads
+8. 4-Layer PCB Stack Configuration
+9. Design Rules (Track Width, Clearance)
+10. Exact Component Placement (X/Y Coordinates)
+11. Routing Order & EMI Rules
+12. Thermal Vias & Heat Management
+13. Test Points & Bring-Up
+14. Manufacturing Settings
+15. Final Checklist
 
 ---
 
-## PCB A → PCB B Control Signals (74HC595 Interface)
+# 1. Overview
 
-| Signal Name | PCB A GPIO | PCB B Pin | 74HC595 Pin | Description |
-|------------|------------|-----------|-------------|-------------|
-| DATA | GPIO18 | J2-1 | SER (Pin 14) | Serial Data Input |
-| CLOCK | GPIO19 | J2-2 | SRCLK (Pin 11) | Shift Register Clock |
-| LATCH | GPIO20 | J2-3 | RCLK (Pin 12) | Output Latch |
-| OE | GPIO21 | J2-4 | OE (Pin 13) | Output Enable (LOW = Active) |
-| GND | GND | J2-5 | GND (Pin 8) | Signal Reference |
+This guide documents a **professional-grade, industrial VMC power front end** supporting:
 
----
+* 24V vending motors
+* EMI/ESD/hot-plug protection
+* Reverse polarity protection
+* Star-ground noise control
+* Stable +5V logic rail via LM2596 buck regulator
 
-## PCB B — Shift Register to MOSFET Mapping
+Designed for:
 
-| Shift Register Output | MOSFET Gate | IR LED | Function |
-|----------------------|------------|--------|----------|
-| QA (Pin 15) | Q1 Gate | IR LED 1 | Channel 1 |
-| QB (Pin 1) | Q2 Gate | IR LED 2 | Channel 2 |
-| QC (Pin 2) | Q3 Gate | IR LED 3 | Channel 3 |
-| QD (Pin 3) | Q4 Gate | IR LED 4 | Channel 4 |
-| QE (Pin 4) | Q5 Gate | IR LED 5 | Channel 5 |
-| QF (Pin 5) | Q6 Gate | IR LED 6 | Channel 6 |
-| QG (Pin 6) | Q7 Gate | IR LED 7 | Channel 7 |
-| QH (Pin 7) | Q8 Gate | IR LED 8 | Channel 8 |
-| QH’ (Pin 9) | Q9 Gate | IR LED 9 | Channel 9 |
-| Cascaded QA | Q10 Gate | IR LED 10 | Channel 10 |
+* ESP32 MCU
+* Shift register motor matrix
+* Sensor ADCs
+* Industrial vending machine environments
 
 ---
 
-## MOSFET IR LED Drive Circuit
+# 2. Electrical Architecture Summary
 
-Each channel:
-- Gate → 74HC595 output via 220Ω resistor
-- Drain → IR LED Cathode
-- Source → GND
-- IR LED Anode → +5V via current-limiting resistor
+## Primary Power Chain
 
----
+```
+J1 → F1 → MOV + TVS → P-MOSFET (Q2)
+   → FB1 → FB2 → L1 → Bulk Caps → +24V_FILT
+                                      ↓
+                                  LM2596 → +5V_LOGIC
+```
 
-## Connector Pinout (PCB A to PCB B)
+## Ground Architecture
 
-| Connector Pin | Signal |
-|--------------|--------|
-| 1 | DATA |
-| 2 | CLOCK |
-| 3 | LATCH |
-| 4 | OE |
-| 5 | GND |
-| 6 | +5V |
+```
+GND_IN
+   \
+    → GND_STAR (C3 negative)
+   /
+GND_DIGITAL
+```
 
----
+This ensures:
 
-## Notes
-
-- Use common ground between both PCBs
-- Place 0.1µF decoupling capacitor near every TSOP4838 and 74HC595
-- Use thick copper traces for IR LED power paths
-- Add TVS diode on +5V input for industrial protection
+* Motor noise stays in power ground
+* MCU and ADC get clean ground
 
 ---
 
-## Signal Flow Summary
+# 3. Power Flow (Functional Chain)
 
-IR Detection Path:
-TSOP4838 → Raspberry Pi Pico GPIO → Firmware Logic
+| Stage          | Function                        |
+| -------------- | ------------------------------- |
+| J1             | 24V Input Connector             |
+| F1             | Overcurrent Protection          |
+| MOV1           | Surge Protection                |
+| D3 (TVS)       | Fast Transient Clamp            |
+| Q2             | Reverse Polarity Protection     |
+| FB1 + FB2 + L1 | EMI Filter                      |
+| C3 + C4 + C5   | Bulk + High-Frequency Smoothing |
+| LM2596         | 24V → 5V Buck Conversion        |
 
-IR Transmission Path:
-Raspberry Pi Pico → 74HC595 → MOSFET → TSAL6400 IR LED
+---
 
+# 4. MOSFET Reverse Protection + Gate Network
 
-# Awesome Electronics [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+## Components
 
-> A curated list of awesome resources for Electronic Engineers and hobbyists
+| Ref | Value               | Purpose                     |
+| --- | ------------------- | --------------------------- |
+| Q2  | DOD40P03 (P-MOSFET) | Reverse polarity protection |
+| R1  | 100kΩ               | Gate pull-down              |
+| R2  | 10Ω                 | Gate speed limiter          |
+| D4  | 1N4148              | Gate clamp diode            |
 
-Electronic Engineering (EE) is the practice of understanding, designing and building electronic circuits. It is often differentiated from electrical engineering in that it mostly deals with low power DC electronic circuits rather than high power AC systems but there is a lot of overlap between electronic and electrical engineering.
+## Gate Network Concept
 
-Experimenting with and building electronic circuits is also a popular hobby and many professional resources are often equally applicable to hobbyists and vice versa.
+```
+MOSFET Gate
+     |
+  R_GATE (10Ω)
+     |
+  ● Gate Node
+   /      \
+ R1        D4
+100kΩ    1N4148
+  |         |
+ GND     Source
+```
 
-This list is for websites, services, software, tools and more: everything that you think is awesome in the world of Electronic Engineering. If you have anything to add please follow the instructions in [contributing.md](contributing.md). 
+## Why
 
-## Contents
+* Prevents gate ringing during hot-plug
+* Reduces EMI
+* Protects MOSFET gate oxide
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+---
 
-- [Learning](#learning)
-- [Documentation](#documentation)
-- [Simulators](#simulators)
-- [Gerber Viewers](#gerber-viewers)
-- [Free EDA Packages](#free-eda-packages)
-- [Paid EDA Packages](#paid-eda-packages)
-- [CAD Specific](#cad-specific)
-- [PCB Batching Services](#pcb-batching-services)
-- [Part Search Engines](#part-search-engines)
-- [Project Sharing Platforms](#project-sharing-platforms)
-- [Inventory Management and Purchasing](#inventory-management-and-purchasing)
-- [Miscellaneous Software Projects](#miscellaneous-software-projects)
-- [Development Board Retailers](#development-board-retailers)
-- [Blogs](#blogs)
-- [Forums](#forums)
-- [Podcasts](#podcasts)
-- [Videos](#videos)
-- [Subscription Kit Services](#subscription-kit-services)
-- [3D Part Models](#3d-part-models)
-- [Other Lists](#other-lists)
-- [Arabic Section](#arabic-section)
+# 5. Star Ground System
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## Nets
 
-## Learning
+* GND_IN = Dirty motor ground
+* GND_DIGITAL = MCU + logic ground
+* GND_STAR = Single connection point
 
-### Technical Tutorials
-- ["skill" tag on learn.sparkfun.com](https://learn.sparkfun.com/tutorials/tags/skill) - A wide variety of technical tutorials on various EE related skills.
-- [Soldering is Easy](https://mightyohm.com/blog/2011/04/soldering-is-easy-comic-book/) - Comic book that goes over the basics of soldering that has been translated into quite a few languages.
-- [Uses of Different Soldering Iron Tips](https://www.instructables.com/id/Uses-of-Different-Soldering-Iron-Tips/) - Covers what all those different soldering iron tips are good for.
-- [How to design a motherboard for your electronics project](https://www.staycaffeinated.com/2021/02/21/how-to-design-a-motherboard-for-your-project-part-1) - Introductory tutorial on Schematic & PCB design
+## Star Point
 
-### Courses
-- [Khan Academy - Electrical Engineering](https://www.khanacademy.org/science/electrical-engineering) - Non-profit learning platform with a full course on electrical engineering and related topics.
-- [NEETS (Navy Electricity and Electronics Training Series)](https://www.fcctests.com/neets/Neets.htm) - U.S. Navy Non-Resident Training Course Material.
-- [NPTEL](https://nptel.ac.in/course.html) - Has all free engineering courses including electronics, electrical and communcation engineering.
-- [Udemy courses related to Electronics](https://www.udemy.com/topic/electronics/) - Top paid courses available on Udemy.
-- [Coursera courses related to Electronics](https://www.coursera.org/courses?query=electronics) - Includes some free courses that provide e-certificates on completion.
+**C3 negative terminal**
 
-### Theory 
-- [Electronics textbook](https://upload.wikimedia.org/wikipedia/commons/e/ee/Electronics.pdf) - Text covers design and function of electronic circuits and components, DC analysis, and AC analysis. 
-- [Student Handbook](http://cbseacademic.nic.in/web_material/Curriculum/Vocational/2018/Basic_Electronics_XI.pdf) - Language used in this book easily understandable covers evolution, fundamentals, diode, rectifiers, transistors and its applications, SCR, DIAC and TRIAC.
-- [Electronics circuits and systems](http://aems.edu.sd/wp-content/uploads/2019/02/Electronics-Circuits-and-Systems-Fourth-Edition-PDFDrive.com-.pdf) - Quality free e-book covering all topics under circuits and systems, highly recommended for conceptual understanding.
-- [Lessons In Electric Circuits](https://www.ibiblio.org/kuphaldt/electricCircuits/) - Free high quality textbooks and worksheets with emphasis on theory, simulation, and the socratic method.
-- [Ultimate Electronics: Practical Circuit Design and Analysis](https://ultimateelectronicsbook.com/) - Free online book with interactive schematics & simulations by CircuitLab (under development).
+## EasyEDA Method
 
+1. Leave all original GND nets
+2. Cut ground wire at C3 negative
+3. Place NetLabel `GND_STAR`
+4. Connect:
 
-### University Course Archives
+   * GND_IN → GND_STAR
+   * GND_DIGITAL → GND_STAR
+   * LM2596 GND → GND_STAR
+   * MOSFET GND → GND_STAR
 
-- [Berkeley EECS](http://inst.eecs.berkeley.edu/classes-eecs.html) - Comprehensive EE & CS course website archives.
-- [Dr. Jacob Baker](http://cmosedu.com) - Courses and tutorials, professor at The University of Nevada, Las Vegas.
-- [Dr. Abraham](https://www.cerc.utexas.edu/~jaa/teaching.html), [Dr. McDermot](http://users.ece.utexas.edu/~mcdermot/), and [Dr. Valvano](http://users.ece.utexas.edu/~valvano/) - Courses materials, professors at UT Austin
+This forces a **single low-impedance noise junction**.
 
-## Documentation
-- [Inkscape Electric Symbols](https://github.com/upb-lea/Inkscape_electric_Symbols) - Circuit Drawing Symbols for Inkscape
-- [Tabula](http://tabula.ondata.it/) - Extract tabular data from a pdf, very useful for extracting pin tables or part characteristics from datasheets.
-- [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) - Extract data from plots, charts, etc., very useful for getting part performance curves from datasheets.
-- [WaveDrom](https://wavedrom.com/) - Create waveforms and timing diagrams from a JSON description file.
-- [tscircuit](https://tscircuit.com) - Open source EDA package for schematic and PCB design using React
+---
 
-## Simulators
+# 6. LM2596 Buck Regulator – Pin & Stability Guide
 
-### Analog and Mixed Signal Circuit Simulators
+## Pin Mapping
 
-- [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html) - The industry standard free SPICE circuit simulator from Linear Technologies. Also see the unofficial [LTwiki](http://ltwiki.org/?title=Main_Page) and [Group](https://groups.io/g/LTspice).
-- [ngspice](http://ngspice.sourceforge.net/) - Open source SPICE circuit simulator.
-- [Circuit JS/Falstad](http://www.falstad.com/circuit/circuitjs.html) - Free, open source online simulator with electron flow visualization (rewrite of original Java applet by Paul Falstad).
-- [EveryCircuit](https://everycircuit.com) - Free to try online, visual, interactive circuit simulator for simpler circuits.
-- [Qucs](http://qucs.sourceforge.net/) - Open source, cross-platform, non-SPICE-based circuit simulator, with with S-parameter and Harmonic Balance capability.
-- [Qucs-S](https://ra3xdh.github.io/) - Open source fork of Qucs using SPICE for simulation.
-- [QucsStudio](http://qucsstudio.de/) - Free, closed-source, Windows-only fork of Qucs with a similar interface, new engine, and more features.
-- [Open Circuit Design Software](http://opencircuitdesign.com) - Open Source, full EDA suite chip design suite, focused on keeping up with commercial tools.
-- [TINA-TI](http://www.ti.com/tool/TINA-TI) - Exclusive [DesignSoft-TINA](https://www.tina.com) build for Texas Instruments, bundled with Texas Instruments Models.
-- [CppSim](https://www.cppsim.com/) - Free, open source circuit simulator that leverages the C++ language to achieve very fast simulation times.
-- [Scilab with Xcos](https://www.scilab.org/) - Free, open source numerical computing alternative to MATLAB. Xcos provides Electrical System modeling capability similar to Simulink.
-- [iCircuit](http://icircuitapp.com/) - Easy to use electronic circuit simulator, its advanced simulation engine can handle both analog and digital circuits and features realtime always-on analysis.
-- [Micro-Cap](http://www.spectrum-soft.com/download/download.shtm) - Professional-grade mixed signal simulator with wide variety of interactive simulation types.
-- [GeckoCIRCUITS](https://de.wikipedia.org/wiki/GeckoCircuits) - Open Source Power Electronic Circuit Simulator. [GitHub Project](https://github.com/geckocircuits/GeckoCIRCUITS). Direct [download link](http://gecko-simulations.com/GeckoCIRCUITS/GeckoCIRCUITS.zip) due to broken website.
-- [Proteus](https://www.labcenter.com/) - PCB Design and Circuit Simulator Software.
+| Pin | Name        | Connection               |
+| --- | ----------- | ------------------------ |
+| 1   | VIN         | +24V_FILT                |
+| 2   | OUT         | D2 → L2                  |
+| 3   | GND         | GND_DIGITAL              |
+| 4   | FB          | Output Sense (+5V_LOGIC) |
+| 5   | ON/OFF      | R4 → VIN                 |
+| EP  | Thermal Pad | GND_DIGITAL Plane        |
 
-### Verilog HDL Simulators
+## EP Pad Layout Rule
 
-- [Verilator](https://www.veripool.org/wiki/verilator) - Free, open source Verilog compiler. Test benches are in C++ or SystemC. Very fast, but limted to 2-state, cycle-based simulation, and synthesizeable code only.
-- [Icarus Verilog](http://iverilog.icarus.com/) - Free, open source verilog interpreter. Test benches are in behavioral verilog. Simulation is 4-state, and event-based.
+* Must connect to GND plane
+* Add 4–6 thermal vias
+* Copper pour under IC
 
-## Gerber Viewers
+## Input Stability Caps
 
-### Online
-- [Tracespace Viewer](https://tracespace.io/) -  Gerber viewer that lets you inspect the individual layers as well as the board preview.
-- [Gerblook](https://www.gerblook.org/) - Online Gerber viewer powered by Gerbv.
-- [Mayhew Labs 3dpcb](http://mayhewlabs.com/3dpcb) - 3D Gerber viewer.
-- [CircuitPeople](https://circuitpeople.com) - No frills 2D layer viewer for Gerbers, without the excessive processing.
-- [Stackrate Viewer](https://stackrate.de/viewer/) - Easy to use online gerber viewer with trace hovering and measurement tools.
+| Ref | Value  | Placement          |
+| --- | ------ | ------------------ |
+| C7  | 100nF  | Closest to VIN pin |
+| C8  | 10µF   | Second closest     |
+| C6  | 1000µF | Bulk input buffer  |
 
-### Installable
-- [Gerbv](http://gerbv.geda-project.org/) - Excellent Gerber viewer for Linux and BSD.
-- [KiCAD Gerbview](https://kicad.org/) - The KiCAD gerber viewer.
-- [GC-Prevue](http://www.graphicode.com/GC-Prevue_Gerber_Viewer) - Commercial with free version. Can handle some gerbers better than Gerbv and KiCAD.
-- [ZofZPCB](https://www.zofzpcb.com/) - FREE 3D Gerber Viewer.
+---
 
-## Free EDA Packages
-- [KiCad](https://kicad.org/) - Open source EDA package with push and shove router, differential pairs and much more.
-- [Eagle](https://www.autodesk.com/products/eagle/overview) - One of the most popular EDA packages due to it's (board size restricted) free version.
-- [DesignSpark PCB](https://www.rs-online.com/designspark/pcb-software) - Gratis EDA package without restrictions, sponserd by RS Components.
-- [Altium CircuitMaker](https://circuitmaker.com/) - Free package from the maker of the go to pro software.
-- [gEDA](http://geda-project.org) - Another open source package, good for people that like scripting and makefiles, Linux and BSD only.
-- [DipTrace](https://diptrace.com) - Quality Schematic Capture and PCB Design software with (pin and signal layer restricted) free version.
-- [LibrePCB](https://librepcb.org/) - A new, powerful and intuitive EDA tool for everyone, cross-platform and GNU GPLv3.
-- [Horizon EDA](https://github.com/horizon-eda/horizon) - A free and open source EDA tool with the focus on shortcut operation.
-- [EasyEDA](https://easyeda.com/) - Easy to use with both browser based and cross platform app versions. Integrates [LCSC](https://www.lcsc.com/products) and [JLCPCB](https://jlcpcb.com/parts) component catalogs with 3D models.
+# 7. EMI Filtering & Ferrite Beads
 
-## Paid EDA Packages
-- [Altium](https://www.altium.com/) - PCB Design Software & Tools.
-- [Proteus](https://www.labcenter.com/) - PCB Design and Circuit Simulator Software.
+| Component | Purpose                     |
+| --------- | --------------------------- |
+| FB1       | Kill conducted EMI          |
+| FB2       | High-frequency suppression  |
+| L1        | Low-frequency ripple filter |
+| C2        | Filter capacitor            |
 
-## CAD Specific
+## Recommended Part
 
-### KiCad
-- [Xesscorp's list of KiCad 3rd party tools](https://github.com/xesscorp/kicad-3rd-party-tools)
-- [Contextual Electronics' Shine on You Crazy KiCad](https://contextualelectronics.com/courses/shine-on-you-crazy-kicad/) - Beginner video tutorial that gets you to a manufactured board as quickly as possible.
-- [Contextual Electronics' Getting to Blinky Tutorial](https://www.youtube.com/playlist?list=PLy2022BX6Eso532xqrUxDT1u2p4VVsg-q) - A more comprehensive beginner to intermediate video tutorial.
-- [KiCad.info Forums](https://forum.kicad.info) - User discussion and help forum.
-- [Keyboard PCB Guide](https://github.com/ruiqimao/keyboard-pcb-guide) -  Comprehensive written tutorial that takes you through creating a keyboard PCB.
-- [Cheatsheet](https://silica.io/wp-content/uploads/2018/06/kicad-cheatsheet.pdf) (also [in landscape](https://silica.io/wp-content/uploads/2018/06/kicad-cheatsheet-landscape.pdf)) - Short PDF that goes over the menus and keyboard shortcuts for the most common operations.
-- [Footprint Collection](https://github.com/kitspace/kicad_footprints) - Collection of all the KiCad footprints available online and some scripts to manage them.
-- [InteractiveHtmlBom](https://github.com/openscopeproject/InteractiveHtmlBom) - A html BOM generation tool for manual pick and place.
-- [KiBot](https://github.com/INTI-CMNB/KiBot) - Generate the fabrication and documentation files for your KiCad projects easily, repeatable, and most of all, scriptably.
+**BLM31PG121SN1L**
 
-### Eagle
-- [List of ULPs everyone should know](https://www.element14.com/community/community/eagle/blog/2015/01/19/eagle-ulps-every-user-should-know)
-- [Adafruit Eagle Library](https://github.com/adafruit/Adafruit-Eagle-Library)
-- [SparkFun Electronics Eagle Libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
+* 1206
+* 6A rated
+* Shielded
 
-### Altium
-- [Altium Designer Libraries](https://www.altium.com/documentation/other_installers#!libraries) - `.IntLib` and `.PcbLib` of electronic components from different manufacturers.
+---
 
+# 8. 4-Layer PCB Stack Configuration
 
-## PCB Batching Services
-- [PCBShopper](https://pcbshopper.com/) - Comparison service for quite a lot of different PCB batching and assembly services.
-- [OSH Park](https://oshpark.com) - Low cost PCB batching service with high quality boards with a signature purple silkscreen.
-- [Aisler](https://aisler.net) - Affordable quality circuit boards made in and shipped from Europe (Germany).
-- [Dirty PCBs](http://dirtypcbs.com/store/pcbs) - Low cost PCB batching service that prides itself on its "dirty" quality.
-- [JLCPCB](https://jlcpcb.com/) - Low cost PCB batching service with inhouse low cost SMT service.
-- [PCBWay](https://www.pcbway.com/) - Low cost PCB batching service with PCBA, CNC and 3D-Printing services.
+## Target Stack
 
-## Part Search Engines
-- [Octopart](https://octopart.com) - Probably the most well known part search engine.
-- [Findchips](https://www.findchips.com/) - Part search from Supply Frame.
-- [Parts.io](https://parts.io/) - Another search engine from Supply Frame geared towards discovering new parts.
-- [Electronic Component Search Engine](https://componentsearchengine.com/) - Free access to schematic symbols, PCB footprints and 3D models.
-- [Yoo Need One - SMD Marking Database](https://smd.yooneed.one/) - Surface Mount Device (SMD) component marking database.
-- [JLCSearch](https://jlcsearch.tscircuit.com) - Find the most popular in-stock JLC components for different categories
+```
+Top (L1)    → Signals + Power (2oz copper)
+Inner1 (L2) → GND_DIGITAL Plane
+Inner2 (L3) → +24V_FILT Plane
+Bottom (L4) → Signals (2oz copper)
+Board Thickness = 1.6mm
+```
 
+## EasyEDA Settings
 
-## Project Sharing Platforms
-- [Kitspace](https://kitspace.org) - Project sharing site that helps you buy parts and re-build projects. Open source and developed by yours truly.
-- [Hackaday.io](https://hackaday.io) - Social site for sharing projects from the popular blog.
-- [Hackster.io](https://www.hackster.io/) - Another social site for sharing projects. Is well organised by platform, topic and product.
-- [InventHub](https://inventhub.io/) - Git-based project hosting and collaboration platform for hardware development.
-- [CADLAB](https://cadlab.io/) - Another Git-based project hosting and collaboration platform for hardware development.
-- [Eyrie](https://eyrie.io) - For viewing Eagle and KiCad designs online.
-- [WikiFactory](https://wikifactory.com/) - A project hosting and collaboration platform for product development. Filter for "electronics" for more electronics related projects.
-- [Instructables](https://www.instructables.com/) - A social site for sharing projects. Filter for "circuits" for more electronics related projects.
+| Layer  | Thickness     |
+| ------ | ------------- |
+| Top    | 0.07mm (2oz)  |
+| Inner1 | 0.035mm (1oz) |
+| Inner2 | 0.035mm (1oz) |
+| Bottom | 0.07mm (2oz)  |
 
+---
 
-## Inventory Management and Purchasing
-- [PartsBox](https://partsbox.io) - Web service to manage your part inventory with a nice user interface and Octopart integration.
-- [Part-DB](https://github.com/Part-DB/Part-DB) - Another open source web service for managing part inventory with a permission system and a good barcode generator.
-- [InvenTree](https://inventree.org) - Open source web service for managing part inventory with parametric search, extensive API and plugin system
-- 
-## Miscellaneous Software Projects
-- [SnapEDA](https://www.snapeda.com) - Parts library with free symbols & footprints. (Compatible with Eagle, KiCad, Altium, OrCad, Allegro, etc.)
-- [Language PCB](https://github.com/Alhadis/language-pcb) - Syntax highlighting for various PCB formats.
-- [NinjaCalc](https://gbmhunter.github.io/NinjaCalc/) - An embedded engineering calculator toolbox for doing calculations in a breeze.
-- [Saturn PCB Design Toolkit](https://saturnpcb.com/saturn-pcb-toolkit/) - The Saturn PCB Toolkit is the best freeware resource for PCB related calculations you can find.
-- [KiCanvas](https://kicanvas.org/) - An open source online viewer of KiCad schematics and boards.
+# 9. Design Rules (DRC)
 
-## Development Board Retailers
-- [Sparkfun](https://www.sparkfun.com/) - Retailer and designer of open source electronics development boards and other equipment and materials with excellent accompanying tutorials.
-- [Adafruit](https://www.adafruit.com/) - Another retailer and designer with excellent selection and tutorials.
-- [Tindie](https://www.tindie.com) - Marketplace for electronics makers to sell low volume batches of their own designs.
+## Track Width
 
-## Blogs
-- [Hackaday](https://hackaday.com) - Probably the most popular blog covering electronics and hardware hacking with a whole staff of writers.
-- [bunniestudios.com](https://www.bunniestudios.com) - Andrew 'Bunnie' Huang covers hardware hacking, open hardware, manufacturing and more.
-- [Bald Engineer](https://www.baldengineer.com) - Project logs, tutorials and articles about electronics and embedded software by James Lewis.
-- [Rheingold Heavy](https://rheingoldheavy.com) - More project logs, tutorials and articles about electronics and embedded software, these ones by Dan Hienzsch.
-- [Hackster.io](https://www.hackster.io/news) - Another blog covering electronics.
-- [Dangerous Prototypes](http://dangerousprototypes.com/blog/) - Blog about open source hardware projects and interesting app notes.
-- [N-O-D-E](https://n-o-d-e.net/) - Blog about DIY electronics, hardware, and technology.
+| Net       | Width   |
+| --------- | ------- |
+| VIN_24    | ≥ 3.5mm |
+| +24V_FILT | ≥ 3.0mm |
+| +5V_LOGIC | ≥ 2.0mm |
+| Buck Loop | ≥ 2.5mm |
+| Signals   | 0.25mm  |
 
+## Clearance
 
-## Forums
+| Rule          | Value |
+| ------------- | ----- |
+| Power-Power   | 1.0mm |
+| Power-Signal  | 1.2mm |
+| Signal-Signal | 0.2mm |
 
-### Discussion
-- [EEVBlog forum](https://www.eevblog.com/forum/) - Probably the largest and most active forum to discuss Electronic Engineering topics.
-- [/r/electronics](https://www.reddit.com/r/electronics/) and [/r/ECE](https://www.reddit.com/r/ECE/) are the two most active sub-reddits for EE topics.
+---
 
-### Help
-- [/r/askelectronics](https://www.reddit.com/r/AskElectronics/) - Sub-reddit dedicated to help on electronics topics.
-- [Electronics Stack Exchange](https://electronics.stackexchange.com) - Question and answer site for electronics running on the popular Stack Overflow service.
-- [EEVBlog beginners forum](https://www.eevblog.com/forum/beginners/) - Good place for beginner questions, other sub-forums on EEVblog should be suitable for questions on more advanced topics.
+# 10. Exact Component Placement (mm Coordinates)
 
+## Reference Origin
 
-## Podcasts
-- [The Amp Hour](https://theamphour.com/) - Off-the-cuff chat about electronics with Chris Gammel and Dave Jones (EEVBlog), often with guests
-- [Embedded.fm](https://embedded.fm/) - Christopher and Elecia White discuss embedded systems development and much more, often with guests.
-- [The Spark Gap Podcast](http://thesparkgap.net) - Covers a specific EE topic each episode, sometimes with guests.
-- [MacroFab Engineering Podcast](https://macrofab.com/blog/podcast/) - Weekly podcast where Parker and Stephen from MacroFab discuss EE topics and industry news.
-- [The Engineering Commons Podcast](http://theengineeringcommons.com/) - Covers general engineering topics from mechanical to electrical.
+**(0,0) = Bottom-left of power section**
 
+## Input Zone
 
-## Videos
-- [EEVblog](https://www.youtube.com/user/EEVblog) - One of the earliest and most successful YouTube channels where Dave Jones does teardowns, tutorials and more.
-- [BigClive](http://bigclive.com) - [YouTube channel](https://www.youtube.com/user/bigclivedotcom) about teardowns (including dangerous products), circuit reverse-engineering and tutorials.
-- [ElectroBOOM](https://www.youtube.com/user/msadaghd) - YouTube channel that debunks and explains EE topics with a lot of comedy thrown in.
-- [Micah Scott](https://www.youtube.com/user/micahjd) - Video logs of reverse engineering and re-purposing consumer electronics hardware in creative ways.
-- [Afrotechmods](https://www.youtube.com/user/afrotechmods) - Tutorials on electronics projects, often suitable for beginners as well.
-- [The Signal Path](https://www.youtube.com/user/TheSignalPathBlog) - Very in depth teardowns, repairs and reviews of lab equipment and prototyping products.
-- [w2aew](https://www.youtube.com/channel/UCiqd3GLTluk2s_IBt7p_LjA) - Excellent tutorials about basic and complex analog hardware.
-- [Mr. Carlson's Lab](https://www.youtube.com/user/MrCarlsonsLab) - Teardowns, repairs and restorations with an emphasis on classic electronics gear.
-- [GreatScott](https://www.youtube.com/user/greatscottlab) - Electronics tutorials, projects and how to's.
-- [Julian Ilett](https://www.youtube.com/user/julius256) - Buys cheapest electronic modules he can find and tries to do useful things with them.
-- [MikesElectricStuff](https://www.youtube.com/channel/UCcs0ZkP_as4PpHDhFcmCHyA) - Teardowns, large lighting projects, xrays and more.
-- [Ben Eater](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU) - Series of videos on building an 8-bit computer on breadboards with excellent explanations of all the sub-circuits.
-- [Robert Feranec](https://www.youtube.com/user/matarofe) - 100+ Hardware design tips and tricks. Videos about Schematic design and PCB layout.
-- [Strange Parts](https://strangeparts.com) - [YouTube channel](https://www.youtube.com/channel/UCO8DQrSp5yEP937qNqTooOw) about electronics, manufacturing, making, world travel, living in and making things in China.
-- [Analog Circuit Design](https://youtube.com/playlist?list=PLc7Gz02Znph-c2-ssFpRrzYwbzplXfXUT) - Analog Circuit Design by Prof. Ali Hajimiri, Caltech.
-## Subscription Kit Services
-- [AdaBox](https://www.adafruit.com/adabox/) - Curated Adafruit products, unique collectibles, and exclusive discounts. All delivered quarterly.
-- [HackerBoxes](https://hackerboxes.com/) - A monthly surprise box which includes projects, components, modules and tools.
+| Part     | X  | Y  |
+| -------- | -- | -- |
+| J1       | 5  | 45 |
+| F1       | 18 | 45 |
+| MOV1     | 30 | 55 |
+| D3 (TVS) | 30 | 35 |
+| C1       | 35 | 45 |
 
-## 3D Part Models
-- [GrabCad](https://grabcad.com/library/electronic-components-1) - Community supported database of 3D models with a large number of electronic component models.
-- [3D ContentCentral](https://www.3dcontentcentral.com) - Website dedicated to 3D models of parts (requires login).
+## MOSFET Zone
 
-## Other Lists
-- [PwnKitteh/InsanelyCheapElectronics](https://github.com/PwnKitteh/InsanelyCheapElectronics) - A list of cheap electronics from China, that you can use in your projects.
-- [PCB/EDA software list on the EEVblog forums](https://www.eevblog.com/forum/eda/pcbeda-software-list/) - A much more comprehensive list of all the software tools available.
-- [intajay/open-electronics](https://github.com/intajay/open-electronics) - Another GitHub list: resources for Electronics Enthusiasts and Hardware Hackers.
-- [Vitorian/awesome-fpga](https://github.com/Vitorian/awesome-fpga) - Awesome list of FPGA resources.
-- [cajt/list_of_robot_electronics](https://github.com/cajt/list_of_robot_electronics) - A GitHub list of resources, projects and products for robot electronics.
-- [embedded-boston/awesome-embedded-systems](https://github.com/embedded-boston/awesome-embedded-systems) - Awesome list of embedded programming resources.
-- [TCAD Central](https://tcadcentral.com/Software.html) - List of Technology CAD (TCAD) software and resources from the maker of DEVSIM.
-- [Awesome Lattice FPGAs](https://github.com/kelu124/awesome-latticeFPGAs) - A curated list of awesome open-source FPGA boards.
-- [TM90/awesome-hwd-tools](https://github.com/TM90/awesome-hwd-tools) - A curated list of hardware design tools with a focus on chip design.
-- [delftopenhardware/awesome-open-hardware](https://github.com/delftopenhardware/awesome-open-hardware) - Helpful items for making and learning about open source hardware projects.
-- [upb-lea/awesome-open-source-power-electronics](https://github.com/upb-lea/awesome-open-source-power-electronics) - Open source software list specialized on power electronics.
+| Part | X  | Y  |
+| ---- | -- | -- |
+| Q2   | 50 | 45 |
+| R1   | 50 | 58 |
+| R2   | 58 | 58 |
+| D4   | 54 | 38 |
 
-## Arabic Section
- - [Complete EE Course](https://youtube.com/playlist?list=PLww54WQ2wa5rOJ7FcXxi-CMNgmpybv7ei&si=4Whr8h-_9kGdUN3_) - دورة الالكترونيات العملية
- - [Complete Digital Electronics Course](https://youtube.com/playlist?list=PLww54WQ2wa5obq6IbRbIiql8oHaTUp3T_&si=I4mqjy3JUZ8xmElT) - دورة الالكترونيات الرقمية
- - [professional Electronics Design](https://youtube.com/playlist?list=PLww54WQ2wa5oKEhE_D3UVbKWwml8o8_Fu&si=BF213_MSJwSiyvIV) - دورة التصميم الالكتروني المحترف كاملة
- - [professional PCB Design](https://www.youtube.com/playlist?list=PLww54WQ2wa5pBm96kQTkqAyMXn9F4Q0i9) - دورة تصميم اللوحات المطبوعة (PCB)
+## EMI Filter Zone
 
+| Part | X   | Y  |
+| ---- | --- | -- |
+| FB1  | 70  | 45 |
+| C2   | 70  | 32 |
+| FB2  | 85  | 45 |
+| L1   | 100 | 45 |
+
+## Star Ground Zone
+
+| Part    | X   | Y  |
+| ------- | --- | -- |
+| C3      | 120 | 45 |
+| C4      | 125 | 55 |
+| C5      | 125 | 35 |
+| LED1+R3 | 140 | 45 |
+
+## Buck Zone
+
+| Part    | X   | Y  |
+| ------- | --- | -- |
+| U1      | 120 | 15 |
+| C7      | 112 | 20 |
+| C8      | 108 | 15 |
+| C6      | 100 | 20 |
+| R4      | 128 | 15 |
+| D2      | 120 | 5  |
+| L2      | 135 | 5  |
+| C9      | 150 | 5  |
+| C10     | 150 | 15 |
+| LED2+R5 | 150 | 25 |
+
+---
+
+# 11. Routing Order & EMI Rules
+
+## Routing Order
+
+1. GND Plane (L2)
+2. +24V_FILT Plane (L3)
+3. High-current loops (L1)
+4. Signals (L4)
+
+## Critical Buck Loop
+
+```
+U1 OUT → D2 → L2 → C9 → U1 GND
+```
+
+Keep this loop **as small as possible**.
+
+## EMI Rules
+
+| Rule                  | Value |
+| --------------------- | ----- |
+| FB trace length       | <20mm |
+| Power crossing signal | Never |
+| Copper under FB       | No    |
+
+---
+
+# 12. Thermal Vias & Heat Management
+
+## LM2596 EP Pad
+
+* Via Drill: 0.3mm
+* Via Diameter: 0.6mm
+* Count: 6
+
+## Inductor L2
+
+* 4 vias to GND plane
+
+---
+
+# 13. Test Points & Bring-Up
+
+Add these pads:
+
+| Label | Net       |
+| ----- | --------- |
+| TP1   | VIN_24    |
+| TP2   | +24V_FILT |
+| TP3   | +5V_LOGIC |
+| TP4   | GND_STAR  |
+
+---
+
+# 14. Manufacturing Settings
+
+| Setting   | Value                 |
+| --------- | --------------------- |
+| Layers    | 4                     |
+| Thickness | 1.6mm                 |
+| Copper    | 2oz outer / 1oz inner |
+| Finish    | ENIG                  |
+| Mask      | Green or Black        |
+
+Order Note:
+
+> “4-layer board, 1.6mm thick, 2oz outer copper, 1oz inner copper”
+
+---
+
+# 15. Final Checklist
+
+✔ Reverse polarity protection
+✔ Surge protection
+✔ EMI filtering
+✔ Star grounding
+✔ Buck thermal vias
+✔ Thick copper power layers
+✔ Test points
+
+---
+
+# 16. Professional Notes
+
+This layout style is used in:
+
+* CNC motor drivers
+* PLC power modules
+* EV control boards
+
+You are now designing **industrial-grade hardware**, not hobby electronics.
+
+---
+
+# 17. Next Steps
+
+* Generate Gerbers
+* Panelization
+* Factory bring-up checklist
+* Load testing with motors
+
+If needed, request:
+
+> “VMC Factory Test Procedure”
+
+---
+
+End of Document

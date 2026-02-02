@@ -1,0 +1,31 @@
+{
+  "component": "LM2596",
+  "voltage": {
+    "min": "4.5V",
+    "typ": "N/A",
+    "max": "40V"
+  },
+  "current": {
+    "operating": "3A"
+  },
+  "package": "Various (not specified)",
+  "pins": "N/A",
+  "temperature": {
+    "min": "-40°C",
+    "max": "125°C"
+  },
+  "features": [
+    "Step-down (buck) switching regulator",
+    "High efficiency (often over 70–80%)",
+    "Fixed frequency of 150 kHz",
+    "Adjustable output version available"
+  ],
+  "applications": [
+    "Powering microcontrollers, sensors, displays, and other devices in 5V, 3.3V, and adjustable-output systems"
+  ],
+  "manufacturer": "Texas Instruments (and others)",
+  "description": "A popular and efficient step-down (buck) switching voltage regulator IC designed for converting higher DC voltages to lower, stable output voltages in power supply circuits.",
+  "parsed": true,
+  "source_url": "https://www.alldatasheet.com/view_datasheet.jsp?Searchword=LM2596",
+  "extracted_at": "2026-02-02T00:06:35.239Z"
+}

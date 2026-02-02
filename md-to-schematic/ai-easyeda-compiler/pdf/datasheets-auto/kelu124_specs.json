@@ -10,8 +10,8 @@
   },
   "package": null,
   "manufacturer": null,
-  "raw": "I don't see any webpage text provided. Please provide the webpage text for the KELU124 component, and I'll extract the specifications as a JSON object.\n\nOnce you provide the text, I'll be happy to assist you!",
+  "raw": "I'll extract the specifications from the webpage text. However, I don't see any webpage text provided. Please provide the webpage text for the KELU124 component, and I'll extract the specifications in the requested format.\n\nOnce you provide the webpage text, I'll return the JSON object with the extracted specifications.",
   "parsed": false,
-  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/KELU124+IC.html",
-  "extracted_at": "2026-02-01T23:52:00.431Z"
+  "source_url": "https://www.alldatasheet.com/datasheet-pdf/pdf/KELU124/TI.html",
+  "extracted_at": "2026-02-01T23:57:10.044Z"
 }
